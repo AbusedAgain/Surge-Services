@@ -1,0 +1,17 @@
+@import '../../globals.scss';
+
+.switch {
+    transform: scale(.7);
+    .react-switch-bg {
+        border-radius: 10px !important;
+        background-color: rgba(var(--error), 1) !important;
+        div {
+            display: none;
+        }
+    }
+    &.checked {
+        .react-switch-bg {
+            background-color: rgba(var(--contrast), 1) !important;
+        }
+    }
+}

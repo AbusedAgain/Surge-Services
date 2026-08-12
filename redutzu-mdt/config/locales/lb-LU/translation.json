@@ -1,0 +1,646 @@
+{
+    "dashboard": {
+        "title": "Wëllkomm zréck, {{name}}",
+        "subtitle": "{{grade}} | {{label}}",
+        "alerts": "Messagen",
+        "citizens": "Bierger",
+        "vehicles": "Zougelos Autoen",
+        "warrants": "Aktiv Haftbefehler",
+        "officers": "Polizisten am Dengst"
+    },
+    "alerts": {
+        "title": "Messagen",
+        "subtitle": "Echtzeit-Polizeiwarnungen uweisen",
+        "form": "Eng Message schecken",
+        "button": "WarnMessage schecken",
+        "name": "Titel von der Warnung",
+        "description": "Beschreiwung",
+        "notification": {
+            "take": {
+                "title": "WarnMessage",
+                "message": "Wellst du den Alarm unhuelen?"
+            },
+            "sent": {
+                "title": "WarnMessage gescheckt",
+                "message": "Du hues den Alarm un déi aner Polizisten geschéckt!"
+            },
+            "opened": {
+                "title": "Nei Message",
+                "message": "Dir hutt en neie Message! Gitt op den Tab \"Warnungen\" fir se ze gesinn."
+            },
+            "closed": {
+                "title": "Nei Message",
+                "message": "Dir hutt en neie Message! Macht den MDT op, a gitt op d'Tab \"WarnMessage\" fir se ze gesinn."
+            }
+        }
+    },
+    "incidents": {
+        "title": "Tëschefäll",
+        "subtitle": "Sichen no Tëschefäll",
+        "form": "Sichen no Tëschefäll",
+        "create": "Een Tëschefäll erstellen",
+        "button": "Ereignis erstellen",
+        "name": "Numm",
+        "description": "Beschreiwung",
+        "players": "Betraffene Bierger",
+        "cops": "Involvéiert Polizisten",
+        "vehicles": "Involvéiert Autoen",
+        "evidences": "Beweismëttel",
+        "fines": "Geldstrofen",
+        "fine_reduction": "Strofreduktioun ({{amount}}$)",
+        "fine_full": "Geldstrofen ({{amount}}$) {{reduction}}",
+        "jail": "Unklopunkten",
+        "jail_reduction": "Reduktioun vun Haftzäit ({{amount}} Monate)",
+        "jail_full": "Unklopunkten ({{amount}} Monate) {{reduction}}",
+        "reducted": "reduzéiert",
+        "incident": {
+            "title": "Tëschefall #{{id}}",
+            "subtitle": "Dësen Tëschefall gouf um {{Datum} erstallt}"
+        },
+        "tooltip": {
+            "description": "Dir kënnt d'Beschreiwung änneren"
+        },
+        "modal": {
+            "delete": {
+                "title": "Läschen",
+                "message": "Wëllt Dir dësen Tëschefall läschen?"
+            }
+        },
+        "notification": {
+            "error": {
+                "title": "Fehler",
+                "message": "Eppes ass falsch gaang fir den Tëschefall ze kreéieren, probéier nach eng Kéier!"
+            },
+            "update": {
+                "title": "Tëschefall aktualiséiert",
+                "message": "Du hues d'Beschreiwung vum Tëschefall #{{id}} erfollegräich geännert}"
+            },
+            "delete": {
+                "title": "Tëschefall geläscht",
+                "message": "Dir hutt den Tëschefall #{{id} erfollegräich geläscht}"
+            },
+            "success": {
+                "title": "Tëschefall erstellt",
+                "message": "Tëschefall #{{id}} gouf erstallt"
+            }
+        }
+    },
+    "evidences": {
+        "title": "Beweismëttel",
+        "subtitle": "Sich no Beweiser",
+        "form": "Beweismëttel sichen",
+        "create": "Erstell een Beweis",
+        "button": "Beweismaterial erstellen",
+        "name": "Numm",
+        "description": "Beschreiwung",
+        "players": "Betraff Bierger",
+        "images": "Biller",
+        "evidence": {
+            "title": "Beweisemëttel #{{id}}",
+            "subtitle": "Dësen Beweis gouf um {{date}} erstellt"
+        },
+        "modal": {
+            "delete": {
+                "title": "Läschen",
+                "message": "Wëllt Dir dëse Beweis läschen??"
+            }
+        },
+        "notification": {
+            "error": {
+                "title": "Fehler",
+                "message": "Eppes ass falsch gaang beim Erstellen vum Beweis, probéier nach eng Kéier!"
+            },
+            "update": {
+                "title": "Beweis aktualiséiert",
+                "message": "Dir hutt de Beweis mat der ID {{id}} erfollegräich geännert"
+            },
+            "delete": {
+                "title": "Beweiser geläscht",
+                "message": "Dir hutt de Beweis #{{id}} erfollegräich geläscht"
+            },
+            "success": {
+                "title": "Beweiser erstellt",
+                "message": "Beweismëttel #{{id}} gouf erstellt"
+            }
+        }
+    },
+    "citizens": {
+        "title": "Bierger",
+        "subtitle": "No Bierger sichen",
+        "form": "Bierger sichen",
+        "wanted": "GESICHT",
+        "incidents": "Tëschefäll",
+        "evidences": "Beweiser",
+        "warrants": "Haftbefehler",
+        "vehicles": "Autoen",
+        "properties": "Charakteristiken",
+        "bolos": "Bolos",
+        "licenses": "Lizenzen",
+        "licenses_list": {
+            "dmv": "Theorieprüfung",
+            "drive": "Führerschäin",
+            "drive_bike": "Motorradführerschäin",
+            "drive_truck": "Camion Führerschäin",
+            "weed_processing": "Lizenz fir d´Marihuanaverarbeitung"
+        },
+        "citizen": {
+            "title": "Bierger",
+            "subtitle": "All Informatiounen iwwer dësen Bierger uweisen"
+        },
+        "modal": {
+            "license_remove": {
+                "title": "Lizenz läschen",
+                "message": "Wëllst du dës Lizenz läschen?"
+            }
+        },
+        "notification": {
+            "update": {
+                "title": "BiergerInformatiounen aktualiséiert",
+                "message": "Du hues d'Biergerinformatioun erfollegräich geännert"
+            },
+            "take": {
+                "title": "Lizenz ewech gehol",
+                "message": "Dir hutt d'Lizenz vun dësem Bierger ewech gehol"
+            }
+        }
+    },
+    "charges": {
+        "title": "Unklopunkter",
+        "subtitle": "Unklopunkte sichen oder erstellen",
+        "form": "No Unklopunkter sichen",
+        "create": "Erstell een Unklopunkt",
+        "button": "Erstell een Unklopunkt",
+        "name": "Numm",
+        "time": "Zeit ({{time}} Méint)",
+        "charge": {
+            "title": "Unklopunkt #{{id}}",
+            "subtitle": "Dësen Unklopunkt gouf um {{date}} erstellt"
+        },
+        "modal": {
+            "delete": {
+                "title": "Läschen",
+                "message": "Wëllt Dir dës Tax läschen?"
+            }
+        },
+        "notification": {
+            "error": {
+                "title": "Fehler",
+                "message": "Eppes ass falsch gaang beim Erstellen vun der Charge, probéier nach eng Kéier!"
+            },
+            "update": {
+                "title": "Unklopunkt aktualiséiert",
+                "message": "Dir hutt d'Charge mat der ID {{id}} erfollegräich geännert."
+            },
+            "delete": {
+                "title": "Unklopunkt geläscht",
+                "message": "Dir hutt den Unklopunkt #{{id}} erfollegräich geläscht"
+            },
+            "success": {
+                "title": "Unklopunkt erstellt",
+                "message": "Unklopunkt #{{id}} gouf erstellt"
+            }
+        }
+    },
+    "codes": {
+        "title": "Codes",
+        "subtitle": "Codes sichen oder erstellen",
+        "form": "No Codes sichen",
+        "create": "Een Code erstellen",
+        "button": "Code erstellen",
+        "name": "numm",
+        "format": "Code ({{format}})",
+        "code": {
+            "title": "Code ({{code}})",
+            "subtitle": "Dëse Code gouf um {{date}} erstellt"
+        },
+        "modal": {
+            "delete": {
+                "title": "Läschen",
+                "message": "Wëllst du dëse Code läschen??"
+            }
+        },
+        "notification": {
+            "error": {
+                "title": "Fehler",
+                "message": "Eppes ass falsch gaangen beim Erstellen vum Code, probéier nach eng Kéier!"
+            },
+            "update": {
+                "title": "Code aktualiséiert",
+                "message": "Du hues de Code erfollegräich mat der ID {{id}} geännert"
+            },
+            "delete": {
+                "title": "Code geläscht",
+                "message": "Dir hutt de Code #{{id}} erfollegräich geläscht"
+            },
+            "success": {
+                "title": "Code erstellt",
+                "message": "Code #{{id}} gouf erstellt"
+            }
+        }
+    },
+    "fines": {
+        "title": "Geldstrofen",
+        "subtitle": "Geldstrofen sichen oder erstellen",
+        "form": "No Geldstrofen sichen",
+        "create": "Erstell eng Stroof",
+        "button": "Geldstrof erstellen",
+        "name": "numm",
+        "code": "Code ({{format}})",
+        "amount": "Betrag",
+        "fine": {
+            "title": "Geldstrof #{{id}}",
+            "subtitle": "Dës Geldstrof gouf den {{Datum}} ausgestallt."
+        },
+        "modal": {
+            "delete": {
+                "title": "Läschen",
+                "message": "Wëllst du dës Geldstrof läschen?"
+            }
+        },
+        "notification": {
+            "error": {
+                "title": "Fehler",
+                "message": "Eppes ass falsch gaang beim Erstellen vun der Geldstrof, probéier nach eng Kéier!"
+            },
+            "update": {
+                "title": "Geldstrof aktualiséiert",
+                "message": "Dir hutt d'Geldstrof mat der ID {{id}} erfollegräich geännert."
+            },
+            "delete": {
+                "title": "Geldstrof geläscht",
+                "message": "Du hues Geldstrof erfollegräich geläscht #{{id}}"
+            },
+            "success": {
+                "title": "Geldstrof erstellt",
+                "message": "Geldstrof #{{id}} gouf erstellt"
+            }
+        }
+    },
+    "houses": {
+        "title": "Haiser",
+        "subtitle": "Sich no Haiser no ID oder Adress",
+        "form": "Immobilien sichen",
+        "owned": "Am Besëtz",
+        "house": {
+            "title": "Haus #{{id}}",
+            "subtitle": "Dës Immobilie ass ze fannen bei {{address}}",
+            "placeholder": "All Informatiounen iwwer dës Immobilie uweisen"
+        },
+        "notification": {
+            "location": {
+                "title": "Setzt de Weepunkt",
+                "message": "Ee Weepunkt gouf op dëser Immobilie gesat"
+            }
+        }
+    },
+    "vehicles": {
+        "title": "Autoen",
+        "subtitle": "Sich no Autoen anhand vum Nummerschëld",
+        "form": "Autoen sichen",
+        "owned": "Am Besëtz",
+        "plate": "Nummerschëld",
+        "incidents": "Tëschefäll",
+        "bolos": "Bolos",
+        "wanted": "WËLLT",
+        "vehicle": {
+            "title": "Autoen",
+            "subtitle": "All Informatiounen iwwer dëst Auto uweisen"
+        },
+        "notification": {
+            "update": {
+                "title": "Autoinformatiounen aktualiséiert",
+                "message": "Dir hutt d'Autoinformatiounen erfollegräich geännert"
+            }
+        }
+    },
+    "warrants": {
+        "title": "Haftbefehle",
+        "subtitle": "Sich no Haftbefehl no Bierger oder Adress",
+        "form": "Sich Haftbefehler",
+        "create": "Erstell een Haftbefehl",
+        "button": "Erstell een Haftbefehl",
+        "reason": "Grond",
+        "description": "Beschreiwung",
+        "type": "Art vum Haftbefehl",
+        "players": "Involvéiert Bierger",
+        "house": "Haiser",
+        "done": "Ofgeschloss",
+        "screenshot": "Maacht e Screenshot",
+        "tabs": {
+            "link": "Link",
+            "screenshot": "Screenshot"
+        },
+        "types": {
+            "arrest": "Verhaftung",
+            "search": "Sichen"
+        },
+        "warrant": {
+            "title": "Haftbefehl #{{id}}",
+            "subtitle": "Dësen Haftbefehl gouf den {{date}} ausgestallt"
+        },
+        "modal": {
+            "delete": {
+                "title": "Läschen",
+                "message": "Wëllst du dësen Haftbefehl läschen?"
+            }
+        },
+        "notification": {
+            "error": {
+                "title": "Fehler",
+                "message": "Eppes ass falsch gaang beim Erstellen vun dem Haftbefehl, probéier nach eng Kéier!"
+            },
+            "update": {
+                "title": "Haftbefehl aktualiséiert",
+                "message": "Du hues den Haftbefehl mat der ID {{id}} erfollegräich geännert."
+            },
+            "delete": {
+                "title": "Haftbefehl gelöscht",
+                "message": "Dir hutt den Haftbefehl #{{id}} erfollegräich geläscht"
+            },
+            "success": {
+                "title": "Haftbefehl erstellt",
+                "message": "Haftbefehl #{{id}} gouf erstellt"
+            }
+        }
+    },
+    "officers": {
+        "title": "Beamte",
+        "subtitle": "All Beamten uweisen"
+    },
+    "bolos": {
+        "title": "Bolos",
+        "subtitle": "Sicht Bolos no Numm, Autokennzeichen oder Titel",
+        "form": "Sicht Bolos",
+        "create": "E Bolo uleeën",
+        "button": "Bolo uleeën",
+        "name": "Titel",
+        "description": "Beschreiwung",
+        "type": "Bolo-Art",
+        "players": "Bierger",
+        "vehicles": "Fuerzeege",
+        "ended": "Ofgeschloss",
+        "types": {
+            "people": "Leit (Numm)",
+            "vehicles": "Fuerzeege (Kennzeichen)"
+        },
+        "bolo": {
+            "title": "BOLO #{{id}}",
+            "subtitle": "Dëse Bolo gouf de {{date}} ugeluecht"
+        },
+        "tooltip": {
+            "description": "Dir kënnt de BOLO änneren",
+            "end": "Dir kënnt de Bolo ofschléissen"
+        },
+        "modal": {
+            "delete": {
+                "title": "Läschen",
+                "message": "Wëllt dir deen Bolo läschen?"
+            },
+            "end": {
+                "title": "Bolo ofschléissen",
+                "message": "Wëllt dir deen Bolo ofschléissen?"
+            }
+        },
+        "notification": {
+            "error": {
+                "title": "Fehler",
+                "message": "Eppes ass schifgaangen beim Erstellen vum Bolo, probéiert et erëm!"
+            },
+            "update": {
+                "title": "BOLO aktualiséiert",
+                "message": "Dir hutt de Bolo #{{id}} erfolgreich aktualiséiert"
+            },
+            "delete": {
+                "title": "BOLO geläscht",
+                "message": "Dir hutt de Bolo #{{id}} erfolgreich geläscht"
+            },
+            "success": {
+                "title": "BOLO ugeluecht",
+                "message": "De Bolo #{{id}} gouf erfolgreich ugeluecht"
+            },
+            "end": {
+                "title": "BOLO ofgeschloss",
+                "message": "Dir hutt de Bolo #{{id}} erfolgreich ofgeschloss"
+            }
+        }
+    },
+    "announcements": {
+        "title": "Ukënnegung",
+        "subtitle": "All Ukënnegung vun de Cheffen kucken",
+        "list": "Lëscht",
+        "form": "Form",
+        "search": "Annoncë sichen",
+        "pinned": "Dës Ukënnegung ass festgeluecht",
+        "created": "Ukënnegung erstallt",
+        "create": "Ukënnegung erstellen",
+        "name": "Titel",
+        "button": "Ukënnegung erstellen",
+        "modal": {
+            "delete": {
+                "title": "Läschen",
+                "message": "Wëllt Dir dës Ukënnegung läschen?"
+            }
+        },
+        "announcement": {
+            "title": "Ukënnegung #{{id}}",
+            "subtitle": "Dës Ukënnegung gouf erstallt {{date}}",
+            "edit": "Änneren",
+            "save": "Ännerunge späicheren"
+        },
+        "notification": {
+            "error": {
+                "title": "Feeler",
+                "message": "Eppes ass falsch gaang beim Erstellen vun der Ukënnegung, probéiert nach eng Kéier!"
+            },
+            "update": {
+                "title": "Ukënnegung aktualiséiert",
+                "message": "Dir hutt d'Ukënnegung erfollegräich mam ID {{id}} geännert"
+            },
+            "delete": {
+                "title": "Ukënnegung geläscht",
+                "message": "Dir hutt d'Ukënnegung #{{id}} erfollegräich geläscht"
+            },
+            "success": {
+                "title": "Ukënnegung erstallt",
+                "message": "Ukënnegung #{{id}} gouf erstallt"
+            }
+        }
+    },
+    "configuration": {
+        "title": "Configuratioun",
+        "subtitle": "Pass den MDT no dengen Wënsch un",
+        "colors": "Faarwen",
+        "main_color": "Haaptfaarf",
+        "secondary_color": "Sekundärfaarf",
+        "third_color": "Drëttfaarf",
+        "highlight_color": "Highlightfaarf",
+        "contrast_color": "Kontrastfaarf",
+        "text_color": "Textfaarf",
+        "language": "Sprooch",
+        "reset": "Astellungen zréckgesat",
+        "placeholder": "🌎 Sprooch",
+        "tooltip": {
+            "language": "Dës Optioun ännert d'Sprooch net fir all Benotzer!"
+        }
+    },
+    "chat": {
+        "placeholder": "Gëff e Message un..."
+    },
+    "errors": {
+        "no-permission": "Dir hutt net déi néideg Rechter fir dës Aktioun ze maachen",
+        "incidents": {
+            "name": {
+                "length": "Den Numm muss méi laang wéi 3 Zeechen sinn",
+                "required": "Du muss en Numm aginn"
+            },
+            "description": {
+                "length": "D'Beschreiwung muss méi laang wéi 10 Zeechen sinn",
+                "required": "Du muss eng Beschreiwung ginn"
+            },
+            "players": {
+                "length": "Du muss op d'mannst 1 Bierger auswielen",
+                "required": "Du muss e deelhuelende Bierger auswielen"
+            },
+            "cops": {
+                "length": "Du muss op d'mannst 1 Polizist auswielen",
+                "required": "Du muss e deelhuelenden Polizist auswielen"
+            }
+        },
+        "evidences": {
+            "name": {
+                "length": "Den Numm muss méi laang wéi 3 Zeechen sinn",
+                "required": "Du muss en Numm aginn"
+            },
+            "description": {
+                "length": "D'Beschreiwung muss méi laang wéi 10 Zeechen sinn",
+                "required": "Du muss eng Beschreiwung ginn"
+            },
+            "images": {
+                "length": "Du muss op d'mannst 1 Bild derbäisetzen",
+                "max": "Du kanns nëmmen 9 Biller derbäisetzen"
+            }
+        },
+        "bolos": {
+            "title": {
+                "length": "De Titel muss méi laang wéi 3 Zeechen sinn",
+                "required": "Dir musst en Titel uginn"
+            },
+            "description": {
+                "length": "D'Beschreiwung muss méi laang wéi 10 Zeechen sinn",
+                "required": "Dir musst eng Beschreiwung uginn"
+            },
+            "bolo_type": {
+                "required": "Dir musst eng Bolo-Art auswielen"
+            }
+        },
+        "warrants": {
+            "reason": {
+                "length": "De Grond muss méi laang wéi 5 Zeechen sinn",
+                "required": "Du muss e Grond uginn"
+            },
+            "description": {
+                "length": "D'Beschreiwung muss méi laang wéi 10 Zeechen sinn",
+                "required": "Du muss eng Beschreiwung ginn"
+            },
+            "wtype": {
+                "required": "Du muss een Haftbefehltyp auswielen"
+            }
+        },
+        "alert": {
+            "title": {
+                "required": "D'Annonce muss een Titel hunn"
+            },
+            "description": {
+                "required": "Du muss eppes an der Beschreiwung vun der Ausschreiwung schreiwen"
+            }
+        },
+        "charges": {
+            "name": {
+                "required": "Du muss en Numm ginn"
+            }
+        },
+        "codes": {
+            "name": {
+                "required": "Du muss en Numm ginn"
+            },
+            "code": {
+                "required": "Du muss en Numm ginn",
+                "format": "De Code Format ass falsch"
+            }
+        },
+        "fines": {
+            "name": {
+                "required": "Du muss en Numm ginn"
+            },
+            "code": {
+                "required": "Du muss e Code uginn",
+                "format": "De Code Format ass falsch"
+            },
+            "amount": {
+                "required": "Du muss e Betrag setzen"
+            }
+        }
+    },
+    "list": {
+        "not_found": "Keng Resultater fonnt"
+    },
+    "modal": {
+        "confirm": "Bestätegen",
+        "close": "Ofschléissen"
+    },
+    "common": {
+        "tooltip": {
+            "save": "Klick op d'Ikon späicheren fir d'Wäerter ze späicheren",
+            "visit": "Klick hei fir de Profil vum Besëtzer ze besichen",
+            "waypoint": "Klick hei fir e Weepoint op dës Immobilie ze setzen",
+            "image": "Lénks klickt fir d'Bild z'änneren | Rietsklickt fir d'Bild ze zoomen",
+            "clear": "Klickt op dës Ikon fir all d'Wäerter ze läschen"
+        },
+        "modal": {
+            "clear_title": "Modul annuléieren",
+            "clear_message": "Wéi d'Wäerter vun de Moduler annuléieren?"
+        }
+    },
+    "words": {
+        "error": "Feeler",
+        "search": "Sichen",
+        "name": "numm",
+        "description": "Beschreiwung",
+        "amount": "Betrag",
+        "months": "Méint",
+        "street": "Strooss",
+        "warrants": "Haftbefehle",
+        "information": "Informatiounen",
+        "firstname": "Virnumm",
+        "lastname": "Familljennumm",
+        "gender": "Geschlecht",
+        "birth": "Gebuertsdatum",
+        "phone": "Telefonsnummer",
+        "job": "Aarbecht",
+        "height": "Gréisst",
+        "notes": "Remarquen",
+        "yes": "Jo",
+        "no": "Nee",
+        "house": "Haiser",
+        "online": "Online",
+        "offline": "Offline",
+        "exit": "Enn"
+    },
+    "pages": {
+        "dashboard": "Dashboard",
+        "incidents": "Tëschefäll",
+        "evidences": "Beweismëttel",
+        "warrants": "Haftbefehle",
+        "officers": "Beamte",
+        "alerts": "Messagen",
+        "citizens": "Bierger",
+        "vehicles": "Autoen",
+        "houses": "Haiser",
+        "fines": "Geldstrofen",
+        "codes": "Codes",
+        "charges": "Unklopunkter",
+        "announcements": "Annoncen",
+        "bolos": "Bolos",
+        "config": "Configuratioun"
+    }
+}

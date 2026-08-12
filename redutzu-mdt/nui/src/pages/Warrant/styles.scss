@@ -1,0 +1,81 @@
+@import '../../globals.scss';
+
+.warrant {
+    display: grid;
+    grid-template-columns: .5fr 1fr;
+    gap: 1rem;
+    margin-block: 4vh;
+    box-sizing: border-box;
+    .warrant-icon {
+        margin-block: 1vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-family: 'Montserrat', sans-serif;
+        color: rgba(var(--text), 1);
+        text-align: center;
+        font-weight: 700;
+        i {
+            font-size: 8vh;
+        }
+        h1 {
+            font-size: 2.5vh;
+            margin-top: 1.5rem;
+            margin-inline: 1.5vw;
+            max-width: 20vw;
+            word-break: break-all;
+        }
+        p {
+            font-size: 1.5vh;
+            &.alert {
+                color: rgba(var(--error), 1);
+            }
+        }
+    }
+    .warrant-information {
+        margin-right: 2vw;
+        .title {
+            display: flex;
+            align-items: center;
+            h1 {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 1.5vh;
+                font-weight: 700;
+                margin-bottom: .5rem;
+                color: rgba(var(--text), 1);
+            }
+            i {
+                cursor: pointer;
+                font-size: 1.1vh;
+                color: rgba(var(--text), 1);
+                margin-left: .5rem;
+                margin-bottom: .5rem;
+            }
+        }
+        .data {
+            display: flex;
+            flex-direction: column;
+            gap: .25rem;
+            p {
+                display: flex;
+                align-items: center;
+                gap: .25rem;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 1.2vh;
+                font-weight: 400;
+                color: rgba(var(--text), .7);
+            }
+            .input-form {
+                margin-top: .25rem;
+            }
+        }
+    }
+    .body {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(20vw, 1fr));
+        margin: 2rem;
+        grid-column: 2 span;
+        gap: 1rem;
+    }
+}

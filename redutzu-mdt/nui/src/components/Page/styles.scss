@@ -1,0 +1,23 @@
+@import '../../globals.scss';
+
+.page-header {
+    font-family: 'Montserrat', sans-serif;
+    color: rgba(var(--text), 1);
+    margin-inline: 1.5vw;
+    padding-inline: .5vw;
+    padding-block: .5vh;
+    border-bottom: 1px solid rgba(var(--highlight), 1);
+    h1 {
+        font-weight: 700;
+        font-size: 2.5vh;
+        i {
+            cursor: pointer;
+            margin-right: .5vw;
+        }
+    }
+    p {
+        font-weight: 400;
+        font-size: 1.5vh;
+        padding-bottom: 0.5vh;
+    }
+}

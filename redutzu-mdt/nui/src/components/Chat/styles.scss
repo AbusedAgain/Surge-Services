@@ -1,0 +1,196 @@
+@import '../../globals.scss';
+
+.chat {
+    box-sizing: border-box;
+    margin: 1rem;
+    height: 50vh;
+    .header {
+        margin-bottom: .5rem;
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 1.5vh;
+            color: rgba(var(--text), .7);
+        }
+    }
+    .body {
+        height: 95%;
+        background-color: rgba(var(--secondary), 1);
+        border-radius: .25rem;
+        box-shadow: 0 0 .15rem rgba(var(--third), 1);
+        display: grid;
+        grid-template-rows: 1fr .1fr;
+        .messages {
+            display: flex;
+            flex-direction: column;
+            padding-top: 1rem;
+            padding-inline: .5rem;
+            padding-bottom: 1rem;
+            gap: .75rem;
+            overflow: scroll;
+            scroll-behavior: smooth;
+            scrollbar-width: none;
+            max-height: inherit;
+            .message {
+                display: flex;
+                flex-direction: column;
+                background-color: rgba(var(--third), 1);
+                width: 75%;
+                border-radius: 10px;
+                box-shadow: 0 0 2px rgba(var(--third), 1);
+                place-self: flex-start;
+                font-family: 'Montserrat', sans-serif;
+                color: rgba(var(--text), 1);
+                .message-header {
+                    display: flex;
+                    align-items: center;
+                    padding-inline: .75rem;
+                    margin-top: .5rem;
+                    .message-author {
+                        display: flex;
+                        align-items: center;
+                        gap: .5rem;
+                        img {
+                            width: 2vh;
+                            height: 2vh;
+                            border-radius: 50%;
+                            object-fit: cover;
+                            border: 1px solid rgba(var(--third), 1);
+                        }
+                        span {
+                            font-weight: 700;
+                            font-size: 1.25vh;
+                        }
+                    }
+                    .message-timestamp {
+                        align-self: flex-start;
+                        margin-left: auto;
+                        span {
+                            font-size: .75vh;
+                        }
+                    }
+                }
+                .message-body {
+                    padding-top: .25rem;
+                    padding-bottom: .5rem;
+                    padding-inline: 1rem;
+                    p {
+                        font-weight: 500;
+                        font-size: 1vh;
+                        white-space: normal;
+                        word-break: break-all;
+                    }
+                }
+                &.self {
+                    place-self: flex-end;
+                    padding-block: .5rem;
+                    width: fit-content;
+                    max-width: 70%;
+                    .message-header {
+                        display: none;
+                    }
+                }
+            }
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }
+        .footer {
+            display: flex;
+            position: relative;
+            background-color: rgba(var(--third), 1);
+            padding-inline: .5rem;
+            .emojis {
+                display: flex;
+                gap: 1rem;
+                width: fit-content;
+                align-self: center;
+                i {
+                    cursor: pointer;
+                    color: rgba(var(--text), .5);
+                }
+            }
+            aside {
+                background-color: rgba(var(--secondary), 1);
+                border: 1px solid rgba(var(--third), 1);
+                position: absolute;
+                left: 85%;
+                bottom: 45%;
+                .epr-category-nav {
+                    padding-top: 0;
+                }
+                .epr-body {
+                    scrollbar-width: none;
+                    scroll-behavior: smooth;
+                    &::-webkit-scrollbar {
+                        display: none;
+                    }
+                }
+                .epr-emoji-category-label {
+                    background-color: rgba(var(--third), .9);
+                    color: rgba(var(--text), .7);
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: 600;
+                    font-size: 1vh;
+                }
+                .epr-emoji-category-content {
+                    .epr-btn, .epr-emoji, .epr-visible, img {
+                        &::after {
+                            display: none;
+                        }
+                        &:hover, &:focus {
+                            background-color: rgba(var(--main), .8) !important;
+                        }
+                    }
+                }
+                .epr-tone {
+                    &:hover {
+                        box-shadow: none;
+                    }
+                }
+                .epr-active {
+                    &::after {
+                        border: none !important;
+                    }
+                }
+                .epr-search-container {
+                    input {
+                        width: 100%;
+                        background-color: rgba(var(--main), 1);
+                        border: 1px solid rgba(var(--third), 1);
+                        &:focus {
+                            background-color: rgba(var(--main), 1);
+                            border-color: rgba(var(--third), 1);
+                        }
+                    }
+                    .epr-btn-clear-search {
+                        &:hover {
+                            background-color: transparent !important;
+                        }
+                    }
+                    .epr-icn-search {
+                        display: none;
+                    }
+                }
+            }
+            input {
+                box-sizing: border-box;
+                height: 100%;
+                width: 85%;
+                border: 0;
+                background-color: transparent;
+                padding-inline: .5rem;
+                color: rgba(var(--text), .85);
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 500;
+                font-size: 1.2vh;
+                &::placeholder {
+                    color: rgba(var(--text), .7);
+                }
+                &:focus {
+                    outline: none;
+                }
+            }   
+        }
+    }
+}

@@ -1,0 +1,646 @@
+{
+    "dashboard": {
+        "title": "Välkommen tillbaka, {{name}}",
+        "subtitle": "{{grade}} | {{label}}",
+        "alerts": "Larm",
+        "citizens": "Medborgare",
+        "vehicles": "Fordon",
+        "warrants": "Efterlysningar",
+        "officers": "Poliser"
+    },
+    "alerts": {
+        "title": "Larm",
+        "subtitle": "Visa Larm i realtid",
+        "form": "Skicka ett larm",
+        "button": "Skicka Larm",
+        "name": "Larm Titel",
+        "description": "Beskrivning",
+        "notification": {
+            "take": {
+                "title": "Larm",
+                "message": "Vill du ta larmet?"
+            },
+            "sent": {
+                "title": "Larmat",
+                "message": "Du har larmat dina kollegor!"
+            },
+            "opened": {
+                "title": "Nytt Larm",
+                "message": "Du har ett nytt larm! Gå till larmfliken för att se den."
+            },
+            "closed": {
+                "title": "Nytt Larm",
+                "message": "Du har ett nytt larm! Öppna Polman och gå till larmfliken för att se den."
+            }
+        }
+    },
+    "incidents": {
+        "title": "Ärenden",
+        "subtitle": "Sök efter ett ärende",
+        "form": "Sök efter ärende",
+        "create": "Skapa ett ärende",
+        "button": "Skapa ärende",
+        "name": "Namn",
+        "description": "Beskrivning",
+        "players": "Inblandade medborgare",
+        "cops": "Inblandade poliser",
+        "vehicles": "Inblandade fordon",
+        "evidences": "Bevis",
+        "fines": "Böter",
+        "fine_reduction": "Bötes reduktion ({{amount}}$)",
+        "fine_full": "Böter ({{amount}}$) {{reduction}}",
+        "jail": "Straff",
+        "jail_reduction": "Straff reduktion ({{amount}} months)",
+        "jail_full": "Straff ({{amount}} months) {{reduction}}",
+        "reducted": "Reducerat",
+        "incident": {
+            "title": "Ärende #{{id}}",
+            "subtitle": "Detta ärende skapades {{date}}"
+        },
+        "tooltip": {
+            "description": "Du kan redigera beskrivningen"
+        },
+        "modal": {
+            "delete": {
+                "title": "Ta bort",
+                "message": "Vill du ta bort detta ärende?"
+            }
+        },
+        "notification": {
+            "error": {
+                "title": "Misslyckades",
+                "message": "Något gick fel när ärendet skapades, försök igen!"
+            },
+            "update": {
+                "title": "Ärende Uppdaterat",
+                "message": "Du har ändrat beskrivningen på ärende #{{id}}"
+            },
+            "delete": {
+                "title": "Ärende Borttaget",
+                "message": "Du har tagit bort ärende #{{id}}"
+            },
+            "success": {
+                "title": "Ärende Skapat",
+                "message": "Ärende #{{id}} har skapats"
+            }
+        }
+    },
+    "evidences": {
+        "title": "Bevis",
+        "subtitle": "Sök efter bevis",
+        "form": "Bevissökning",
+        "create": "Spara Bevisning",
+        "button": "Spara Bevis",
+        "name": "Namn",
+        "description": "Beskrivning",
+        "players": "Inblandade medborgare",
+        "images": "Bilder",
+        "evidence": {
+            "title": "Bevis #{{id}}",
+            "subtitle": "Bevisningen sparades {{date}}"
+        },
+        "modal": {
+            "delete": {
+                "title": "Ta Bort",
+                "message": "Vill du ta bort beviset?"
+            }
+        },
+        "notification": {
+            "error": {
+                "title": "Misslyckades",
+                "message": "Något gick fel vid sparandet av beviset, försök igen!"
+            },
+            "update": {
+                "title": "Beviset Uppdaterades",
+                "message": "Du har uppdaterat bevis {{id}}"
+            },
+            "delete": {
+                "title": "Bevis Borttaget",
+                "message": "Du har tagit bort bevis #{{id}}"
+            },
+            "success": {
+                "title": "Bevisning sparad",
+                "message": "Bevis #{{id}} Har sparats"
+            }
+        }
+    },
+    "citizens": {
+        "title": "Medborgare",
+        "subtitle": "Sök efter medborgare",
+        "form": "Sök efter medborgare",
+        "wanted": "EFTERLYST",
+        "incidents": "Ärenden",
+        "evidences": "Bevisningar",
+        "warrants": "Efterlysningar",
+        "vehicles": "Fordon",
+        "properties": "Fastigheter",
+        "bolos": "Bolos",
+        "licenses": "Licenser",
+        "licenses_list": {
+            "dmv": "Körtillstånd",
+            "drive": "Körkort typ B",
+            "drive_bike": "Körkort typ A",
+            "drive_truck": "Körkort typ C",
+            "weed_processing": "Narkotika Licens"
+        },
+        "citizen": {
+            "title": "Medborgare",
+            "subtitle": "Visa information om personen"
+        },
+        "modal": {
+            "license_remove": {
+                "title": "Återkalla Licens",
+                "message": "Vill du återkalla licensen?"
+            }
+        },
+        "notification": {
+            "update": {
+                "title": "Medborgarinformation Uppdaterad",
+                "message": "Du har uppdaterat medborgarens information"
+            },
+            "take": {
+                "title": "Licens Återkallad",
+                "message": "Du har återkallat licensen"
+            }
+        }
+    },
+    "charges": {
+        "title": "Straff",
+        "subtitle": "Sök eller skapa straff",
+        "form": "Sök efter straff",
+        "create": "Skapa ett straff",
+        "button": "Skapa straff",
+        "name": "Namn",
+        "time": "Tid ({{time}} Månader)",
+        "charge": {
+            "title": "Straff #{{id}}",
+            "subtitle": "Straffet skapades {{date}}"
+        },
+        "modal": {
+            "delete": {
+                "title": "Ta Bort",
+                "message": "Vill du ta bort straffet?"
+            }
+        },
+        "notification": {
+            "error": {
+                "title": "Misslyckades",
+                "message": "Något gick fel vid skapande av straffet, försök igen!"
+            },
+            "update": {
+                "title": "Straff Uppdaterat",
+                "message": "Du har uppdaterat straff {{id}}"
+            },
+            "delete": {
+                "title": "Straff Borttaget",
+                "message": "Du har tagit bort straff #{{id}}"
+            },
+            "success": {
+                "title": "Straff Skapat",
+                "message": "Straff #{{id}} har skapats"
+            }
+        }
+    },
+    "codes": {
+        "title": "Koder",
+        "subtitle": "Sök eller skapa koder",
+        "form": "Sök efter koder",
+        "create": "Skapa kod",
+        "button": "Skapa kod",
+        "name": "Namn",
+        "format": "Kod ({{format}})",
+        "code": {
+            "title": "Kod ({{code}})",
+            "subtitle": "Koden skapades {{date}}"
+        },
+        "modal": {
+            "delete": {
+                "title": "Ta Bort",
+                "message": "Vill du ta bort koden?"
+            }
+        },
+        "notification": {
+            "error": {
+                "title": "Misslyckades",
+                "message": "Något gick fel vid skapandet av koden, försök igen!"
+            },
+            "update": {
+                "title": "Kod Uppdaterad",
+                "message": "Du har uppdaterat kod {{id}}"
+            },
+            "delete": {
+                "title": "Kod Borttagen",
+                "message": "Du har tagit bort kod #{{id}}"
+            },
+            "success": {
+                "title": "kod Skapad",
+                "message": "Kod #{{id}} har skapats"
+            }
+        }
+    },
+    "fines": {
+        "title": "Böter",
+        "subtitle": "Sök eller skapa böter",
+        "form": "Sök efter böter",
+        "create": "Skapa bot",
+        "button": "Skapa bot",
+        "name": "Namn",
+        "code": "Kod ({{format}})",
+        "amount": "Belopp",
+        "fine": {
+            "title": "Bot #{{id}}",
+            "subtitle": "Bötern skapades {{date}}"
+        },
+        "modal": {
+            "delete": {
+                "title": "Ta Bort",
+                "message": "Vill du ta bort bötern?"
+            }
+        },
+        "notification": {
+            "error": {
+                "title": "Misslyckades",
+                "message": "Något gick fel vid skapande av bötern, försök igen!"
+            },
+            "update": {
+                "title": "Bot Uppdaterad",
+                "message": "Du har uppdaterat bot {{id}}"
+            },
+            "delete": {
+                "title": "Bot Borttagen",
+                "message": "Du har tagit bort bot #{{id}}"
+            },
+            "success": {
+                "title": "Bot skapad",
+                "message": "Bot #{{id}} har skapats"
+            }
+        }
+    },
+    "houses": {
+        "title": "Fastighet",
+        "subtitle": "Sök efter fastigheter med id eller adress",
+        "form": "Sök efter fastighet",
+        "owned": "Ägd",
+        "house": {
+            "title": "Fastighet #{{id}}",
+            "subtitle": "Den här fastigheten ligger på {{address}}",
+            "placeholder": "Se all information om denna fastighet"
+        },
+        "notification": {
+            "location": {
+                "title": "GPS Inställd",
+                "message": "En GPS punkt har ställts in för den här fastigheten"
+            }
+        }
+    },
+    "vehicles": {
+        "title": "Fordon",
+        "subtitle": "Sök efter fordon med registreringsnummer",
+        "form": "Sök efter fordon",
+        "owned": "Ägd",
+        "plate": "Registreringsskylt",
+        "incidents": "Ärenden",
+        "bolos": "Bolos",
+        "wanted": "EFTERLYST",
+        "vehicle": {
+            "title": "Fordon",
+            "subtitle": "Se all information om detta fordon"
+        },
+        "notification": {
+            "update": {
+                "title": "Fordonsinformation Uppdaterad",
+                "message": "Du har uppdaterat fordonets information"
+            }
+        }
+    },
+    "warrants": {
+        "title": "Efterlysningar",
+        "subtitle": "Sök efter efterlysningar med namn eller adress",
+        "form": "Sök efter efterlysningar",
+        "create": "Skapa en efterlysan",
+        "button": "Skapa en efterlysan",
+        "reason": "Anledning",
+        "description": "Beskrivning",
+        "type": "Typ av efterlysan",
+        "players": "Inblandade medborgare",
+        "house": "Fastigheter",
+        "done": "Färdig",
+        "screenshot": "Ta en bild",
+        "tabs": {
+            "link": "Länk",
+            "screenshot": "Bild"
+        },
+        "types": {
+            "arrest": "Grip",
+            "search": "Sök"
+        },
+        "warrant": {
+            "title": "Efterlysning #{{id}}",
+            "subtitle": "Efterlysningen skapades {{date}}"
+        },
+        "modal": {
+            "delete": {
+                "title": "Ta Bort",
+                "message": "Vill du ta bort efterlysningen?"
+            }
+        },
+        "notification": {
+            "error": {
+                "title": "Misslyckades",
+                "message": "Något gick fel vid skapandet av efterlysningen, försök igen!"
+            },
+            "update": {
+                "title": "Efterlysan Uppdaterad",
+                "message": "Du har uppdaterat efterlysning {{id}}"
+            },
+            "delete": {
+                "title": "Efterlysan Borttagen",
+                "message": "Du har tagit bort efterlysning #{{id}}"
+            },
+            "success": {
+                "title": "Efterlysning Skapad",
+                "message": "Efterlysning #{{id}} har skapats"
+            }
+        }
+    },
+    "officers": {
+        "title": "Poliser",
+        "subtitle": "Visa alla poliser"
+    },
+    "bolos": {
+        "title": "Bolos",
+        "subtitle": "Sök efter bolos efter namn, bilnummer eller titel",
+        "form": "Sök bolos",
+        "create": "Skapa en bolo",
+        "button": "Skapa bolo",
+        "name": "Titel",
+        "description": "Beskrivning",
+        "type": "Bolo-typ",
+        "players": "Medborgare",
+        "vehicles": "Fordon",
+        "ended": "Avslutad",
+        "types": {
+            "people": "Människor (Namn)",
+            "vehicles": "Fordon (Registreringsnummer)"
+        },
+        "bolo": {
+            "title": "BOLO #{{id}}",
+            "subtitle": "Denna bolo skapades {{date}}"
+        },
+        "tooltip": {
+            "description": "Du kan redigera BOLO",
+            "end": "Du kan avsluta denna BOLO"
+        },
+        "modal": {
+            "delete": {
+                "title": "Ta bort",
+                "message": "Vill du ta bort denna bolo?"
+            },
+            "end": {
+                "title": "Avsluta BOLO",
+                "message": "Vill du avsluta denna bolo?"
+            }
+        },
+        "notification": {
+            "error": {
+                "title": "Fel",
+                "message": "Något gick fel vid skapandet av bolo, försök igen!"
+            },
+            "update": {
+                "title": "BOLO uppdaterad",
+                "message": "Du har framgångsrikt uppdaterat bolo #{{id}}"
+            },
+            "delete": {
+                "title": "BOLO borttagen",
+                "message": "Du har framgångsrikt tagit bort bolo #{{id}}"
+            },
+            "success": {
+                "title": "BOLO skapad",
+                "message": "Bolo #{{id}} har skapats framgångsrikt"
+            },
+            "end": {
+                "title": "BOLO avslutad",
+                "message": "Du har framgångsrikt avslutat bolo #{{id}}"
+            }
+        }
+    },
+    "announcements": {
+        "title": "Meddelanden",
+        "subtitle": "Visa alla meddelanden som gjorts av cheferna",
+        "list": "Lista",
+        "form": "Formulär",
+        "search": "Sök meddelanden",
+        "pinned": "Detta meddelande är fastnålat",
+        "created": "Meddelande skapat",
+        "create": "Skapa meddelande",
+        "name": "Titel",
+        "button": "Skapa meddelande",
+        "modal": {
+            "delete": {
+                "title": "Ta bort",
+                "message": "Vill du ta bort detta meddelande?"
+            }
+        },
+        "announcement": {
+            "title": "Meddelande #{{id}}",
+            "subtitle": "Detta meddelande skapades {{date}}",
+            "edit": "Redigera",
+            "save": "Spara ändringar"
+        },
+        "notification": {
+            "error": {
+                "title": "Fel",
+                "message": "Något gick fel vid skapandet av meddelandet, försök igen!"
+            },
+            "update": {
+                "title": "Meddelande uppdaterat",
+                "message": "Du har lyckats ändra meddelandet med id {{id}}"
+            },
+            "delete": {
+                "title": "Meddelande borttaget",
+                "message": "Du har lyckats ta bort meddelandet #{{id}}"
+            },
+            "success": {
+                "title": "Meddelande skapat",
+                "message": "Meddelandet #{{id}} har skapats"
+            }
+        }
+    },
+    "configuration": {
+        "title": "Konfiguration",
+        "subtitle": "Anpassa Polman efter dina önskemål",
+        "colors": "Färger",
+        "main_color": "Huvudfärg",
+        "secondary_color": "Sekundär färg",
+        "third_color": "Tredje färg",
+        "highlight_color": "Markeringsfärg",
+        "contrast_color": "Kontrastfärg",
+        "text_color": "Text färg",
+        "language": "Språk",
+        "reset": "Återställ inställningar",
+        "placeholder": "🌎 Språk",
+        "tooltip": {
+            "language": "Det här alternativet kommer inte att ändra språket för alla användare!"
+        }
+    },
+    "chat": {
+        "placeholder": "Skriv ett meddelande.."
+    },
+    "errors": {
+        "no-permission": "Du har inte tillåtelse att göra detta!",
+        "incidents": {
+            "name": {
+                "length": "Namnet måste vara längre än 3 tecken",
+                "required": "Du måste ange ett namn"
+            },
+            "description": {
+                "length": "Beskrivningen måste vara längre än 10 tecken",
+                "required": "Du måste ange en beskrivning"
+            },
+            "players": {
+                "length": "Du måste välja minst 1 medborgare",
+                "required": "Du måste välja en involverad medborgare"
+            },
+            "cops": {
+                "length": "Du måste välja minst 1 polis",
+                "required": "Du måste välja en inblandad polis"
+            }
+        },
+        "evidences": {
+            "name": {
+                "length": "Namnet måste vara längre än 3 tecken",
+                "required": "Du måste ange ett namn"
+            },
+            "description": {
+                "length": "Beskrivningen måste vara längre än 10 tecken",
+                "required": "Du måste ange en beskrivning"
+            },
+            "images": {
+                "length": "Du måste lägga till minst en bild",
+                "max": "Du kan bara lägga till 9 bilder"
+            }
+        },
+        "bolos": {
+            "title": {
+                "length": "Titeln måste vara längre än 3 tecken",
+                "required": "Du måste ange en titel"
+            },
+            "description": {
+                "length": "Beskrivningen måste vara längre än 10 tecken",
+                "required": "Du måste ange en beskrivning"
+            },
+            "bolo_type": {
+                "required": "Du måste välja en bolo-typ"
+            }
+        },
+        "warrants": {
+            "reason": {
+                "length": "Orsaken måste vara längre än 5 tecken",
+                "required": "Du måste ange en anledning"
+            },
+            "description": {
+                "length": "Beskrivningen måste vara längre än 10 tecken",
+                "required": "Du måste ange en beskrivning"
+            },
+            "wtype": {
+                "required": "Du måste välja typ av efterlysning"
+            }
+        },
+        "alert": {
+            "title": {
+                "required": "Larmet måste ha en titel"
+            },
+            "description": {
+                "required": "Du måste skriva något i beskrivningen på larmet"
+            }
+        },
+        "charges": {
+            "name": {
+                "required": "Du måste ange ett namn"
+            }
+        },
+        "codes": {
+            "name": {
+                "required": "Du måste ange ett namn"
+            },
+            "code": {
+                "required": "Du måste ange en kod",
+                "format": "Kodformatet är fel"
+            }
+        },
+        "fines": {
+            "name": {
+                "required": "Du måste ange ett namn"
+            },
+            "code": {
+                "required": "Du måste ange en kod",
+                "format": "Kodformatet är fel"
+            },
+            "amount": {
+                "required": "Du måste ange ett belopp"
+            }
+        }
+    },
+    "list": {
+        "not_found": "Inga resultat funna"
+    },
+    "modal": {
+        "confirm": "Bekräfta",
+        "close": "Stäng"
+    },
+    "common": {
+        "tooltip": {
+            "save": "Klicka på spara-ikonen för att spara värdena",
+            "visit": "Klicka här för att besöka ägarens profil",
+            "waypoint": "Klicka här för att ställa in en GPS punkt till den här fastigheten",
+            "image": "Vänsterklicka för att redigera bilden | Högerklicka för att zooma bilden",
+            "clear": "Klicka här för att rensa fälten"
+        },
+        "modal": {
+            "clear_title": "Rensa formulär",
+            "clear_message": "Är du säker på att du vill rensa formulärvärdena?"
+        }
+    },
+    "words": {
+        "error": "Fel",
+        "search": "Sök",
+        "name": "Namn",
+        "description": "Beskrivning",
+        "amount": "Belopp",
+        "months": "Månader",
+        "street": "Gata",
+        "warrants": "Efterlysningar",
+        "information": "Information",
+        "firstname": "Förnamn",
+        "lastname": "Efternamn",
+        "gender": "Kön",
+        "birth": "Födelsedatum",
+        "phone": "Telefonnummer",
+        "job": "Jobb",
+        "height": "Höjd",
+        "notes": "Anteckningar",
+        "yes": "Ja",
+        "no": "Nej",
+        "house": "Fastigheter",
+        "online": "Uppkopplad",
+        "offline": "Nerkopplad",
+        "exit": "Stäng"
+    },
+    "pages": {
+        "dashboard": "Instrumentpanel",
+        "incidents": "Ärenden",
+        "evidences": "Bevisningar",
+        "warrants": "Efterlysningar",
+        "officers": "Poliser",
+        "alerts": "Larm",
+        "citizens": "Medborgare",
+        "vehicles": "Fordon",
+        "houses": "Fastigheter",
+        "fines": "Böter",
+        "codes": "Koder",
+        "charges": "Straff",
+        "announcements": "Meddelanden",
+        "bolos": "Bolos",
+        "config": "Konfiguration"
+    }
+}

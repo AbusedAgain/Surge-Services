@@ -1,0 +1,43 @@
+@import '../../globals.scss';
+
+.slider-container {
+	margin-bottom: .5rem;
+	h1 {
+		font-family: 'Montserrat', sans-serif;
+		font-size: 1.2vh;
+		font-weight: 600;
+		color: rgba(var(--text), .5);
+		margin-bottom: .5rem;
+	}
+	.custom-slider {
+		max-width: 100%;
+	}
+	.custom-slider-thumb {
+		cursor: pointer;
+		background-color: rgba(var(--text), .4);
+		width: 12px;
+		height: 12px;
+		top: -2px;
+		border-radius: 100%;
+		outline: none;
+		transition: transform .2s ease-in-out, background-color .2s ease-in-out;
+		&:hover {
+			transform: scale(1.5);
+			background-color: rgba(var(--text), .2);
+		}
+	}
+	.custom-slider-track {
+		height: .5rem;
+		border-radius: 5px;
+		background-color: rgba(var(--secondary), 1);
+		&.custom-slider-track-0 {
+			background-color: rgba(var(--third), 1);
+		}
+	}
+	.custom-slider-mark {
+		cursor: pointer;
+		width: 2px;
+		height: 8px;
+		background-color: rgba(var(--text), .3);
+	}
+}

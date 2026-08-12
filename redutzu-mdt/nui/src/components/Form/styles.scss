@@ -1,0 +1,33 @@
+@import '../../globals.scss';
+
+form {
+	box-sizing: border-box;
+	min-height: 70vh;
+	max-height: 50vh;
+	display: grid;
+	grid-template-rows: 1.5rem 1fr;
+	padding-inline: .5rem;
+	overflow-y: scroll;
+	scroll-behavior: smooth;
+	scrollbar-width: none;
+	&::-webkit-scrollbar {
+		display: none;
+	}
+	.header {
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+		color: rgba(var(--text), .7);
+		h1 {
+			font-family: 'Montserrat', sans-serif;
+			font-weight: 500;
+			font-size: 1.1rem;
+		}
+	}
+	.content {
+		display: flex;
+		flex-direction: column;
+		gap: .6rem;
+		margin-top: .3rem;
+	}
+}

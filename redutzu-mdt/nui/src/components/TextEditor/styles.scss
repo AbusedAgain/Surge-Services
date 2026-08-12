@@ -1,0 +1,43 @@
+@import '../../globals.scss';
+
+.text-editor {
+    .mantine-RichTextEditor-root {
+        background-color: rgba(var(--secondary), 1);
+        border-color: rgba(var(--third), 1);
+        &.editor-error {
+			border: 1px solid rgba(var(--error), .5);
+		}
+        .mantine-RichTextEditor-toolbar {
+            background-color: rgba(var(--third), 1);
+            .mantine-RichTextEditor-toolbarControl {
+                background-color: rgba(var(--secondary), .5);
+                border-color: rgba(var(--text), .2);
+            }
+        }
+        .quill {
+            font-family: 'Montserrat', sans-serif;
+            color: rgba(var(--text), 1);
+            blockquote {
+                border-left-color: rgba(var(--text), .5);
+            }
+            .ql-syntax {
+                background-color: rgba(var(--third), 1);
+                border-color: rgba(var(--main), .5);
+                color: rgba(var(--text), .75);
+            }
+            .ql-tooltip {
+                background-color: rgba(var(--secondary), 1);
+                border-color: rgba(var(--third), 1);
+                input {
+                    background-color: rgba(var(--third), 1);
+                    border-color: rgba(var(--main), .75);
+                }
+                .ql-action {
+                    &::before {
+                        background-color: rgba(var(--contrast), 1);
+                    }
+                }
+            }
+        }
+    }
+}

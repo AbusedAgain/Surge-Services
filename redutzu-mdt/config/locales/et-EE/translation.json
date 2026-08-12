@@ -1,0 +1,646 @@
+{
+    "dashboard": {
+        "title": "Tere tulemast tagasi, {{name}}",
+        "subtitle": "{{grade}} | {{label}}",
+        "alerts": "Hoiatused",
+        "citizens": "Kodanikud",
+        "vehicles": "Registreeritud sõidukid",
+        "warrants": "Aktiivsed orderid",
+        "officers": "Tööl olevad ohvitserid"
+    },
+    "alerts": {
+        "title": "Hoiatused",
+        "subtitle": "Vaata reaalajas politsei kutseid",
+        "form": "Saada kutse ",
+        "button": "Saada kutse",
+        "name": "Kutse pealkiri",
+        "description": "Kirjeldus",
+        "notification": {
+            "take": {
+                "title": "Kutse",
+                "message": "Kas sa soovid võtta selle kutse?"
+            },
+            "sent": {
+                "title": "Kutse saadetud",
+                "message": "Sa saatsid kutse teistele politseinikutele!"
+            },
+            "opened": {
+                "title": "Uus kutse",
+                "message": "Sul on uus kutse! Mine kutse lahtrisse, et seda näha."
+            },
+            "closed": {
+                "title": "Uus kutse",
+                "message": "Sul on uus kutse! Ava MDT ja mine kutse lahtrisse, et seda näha."
+            }
+        }
+    },
+    "incidents": {
+        "title": "Juhtumid",
+        "subtitle": "Otsi juhtumeid",
+        "form": "Otsi juhtumeid",
+        "create": "Loo juhtum",
+        "button": "Loo juhtum",
+        "name": "Nimi",
+        "description": "Kirjeldus",
+        "players": "Kodanikud, kes olid seotud",
+        "cops": "Politseid, kes olid seotud",
+        "vehicles": "Masinad, mis olid seotud",
+        "evidences": "Asitõendid",
+        "fines": "Trahvid",
+        "fine_reduction": "Trahvi vähendamine ({{amount}}$)",
+        "fine_full": "Trahvid ({{amount}}$) {{reduction}}",
+        "jail": "Süüdistused",
+        "jail_reduction": "Vanglaaja vähendamine ({{amount}} месяцы)",
+        "jail_full": "Süüdistused ({{amount}} месяцы) {{reduction}}",
+        "reducted": "Vähendatud",
+        "incident": {
+            "title": "Juhtum #{{id}}",
+            "subtitle": "See juhtum on loodud {{date}}"
+        },
+        "tooltip": {
+            "description": "Sa saad muuta kirjeldust"
+        },
+        "modal": {
+            "delete": {
+                "title": "Kustuta",
+                "message": "Kas sa soovid kustutada selle juhtumi?"
+            }
+        },
+        "notification": {
+            "error": {
+                "title": "Viga",
+                "message": "Midagi läks valesti juhtumi loomisel, proovi uuesti!"
+            },
+            "update": {
+                "title": "Juhtum uuendatud",
+                "message": "Muutsite edukalt juhtumi kirjeldust #{{id}}"
+            },
+            "delete": {
+                "title": "Juhtum kustutatud",
+                "message": "Kustutasite edukalt juhtumi #{{id}}"
+            },
+            "success": {
+                "title": "Juhtum loodud",
+                "message": "Lõid juhtumi #{{id}}"
+            }
+        }
+    },
+    "evidences": {
+        "title": "Asitõendid",
+        "subtitle": "Otsi asitõendeid",
+        "form": "Otsi asitõendeid",
+        "create": "Loo asitõend",
+        "button": "Loo asitõend",
+        "name": "Nimi",
+        "description": "Kirjeldus",
+        "players": "Kodanikud, kes olid seotud",
+        "images": "Pildid",
+        "evidence": {
+            "title": "Asitõend #{{id}}",
+            "subtitle": "See asitõend on loodud {{date}}"
+        },
+        "modal": {
+            "delete": {
+                "title": "Kustuta",
+                "message": "Oled sa kindel, et soovid kustutada asitõendi?"
+            }
+        },
+        "notification": {
+            "error": {
+                "title": "Viga",
+                "message": "Midagi läks valesti asitõendi loomisel, proovi uuesti!"
+            },
+            "update": {
+                "title": "Asitõend uuendatud",
+                "message": "Uuendasid edukalt asitõendit id {{id}}"
+            },
+            "delete": {
+                "title": "Asitõend kustutatud",
+                "message": "Kustutasid edukalt asitõendi #{{id}}"
+            },
+            "success": {
+                "title": "Asitõend loodud",
+                "message": "Lõid asitõendi #{{id}}"
+            }
+        }
+    },
+    "citizens": {
+        "title": "Kodanikud",
+        "subtitle": "Otsi kodanikke",
+        "form": "Otsi kodanike",
+        "wanted": "Tagaotsitav",
+        "incidents": "Juhtumid",
+        "evidences": "Asitõendid",
+        "warrants": "Orderid",
+        "vehicles": "Masinad",
+        "properties": "Kinnistud",
+        "bolos": "Bolos",
+        "licenses": "Litsentsid",
+        "licenses_list": {
+            "dmv": "Juhtimis luba",
+            "drive": "Juhiluba",
+            "drive_bike": "Mootorratta luba",
+            "drive_truck": "Kommertsjuhiluba",
+            "weed_processing": "Kanepi töötlemise litsents"
+        },
+        "citizen": {
+            "title": "Kodanik",
+            "subtitle": "Vaata infot selle kodaniku kohta"
+        },
+        "modal": {
+            "license_remove": {
+                "title": "Võta litsents",
+                "message": "Oled sa kindel, et soovid litsentsi tühistada?"
+            }
+        },
+        "notification": {
+            "update": {
+                "title": "Kodaniku informatsioon uuendatud",
+                "message": "Muutsid edukalt kodaniku informatsiooni."
+            },
+            "take": {
+                "title": "Litsents peatatud",
+                "message": "Peatasid kodaniku litsentsi."
+            }
+        }
+    },
+    "charges": {
+        "title": "Süüdistused",
+        "subtitle": "Otsi või loo süüdistusi",
+        "form": "Otsi süüdistusi",
+        "create": "Loo süüdistus",
+        "button": "Loo süüdistus",
+        "name": "Nimi",
+        "time": "Aeg ({{time}} kuud)",
+        "charge": {
+            "title": "Süüdistus #{{id}}",
+            "subtitle": "Süüdistus on loodud {{date}}"
+        },
+        "modal": {
+            "delete": {
+                "title": "Kustuta",
+                "message": "Kas sa soovid kustutada selle süüdistuse?"
+            }
+        },
+        "notification": {
+            "error": {
+                "title": "Viga",
+                "message": "Midagi läks valesti süüdistuse loomisel, proovi uuesti!"
+            },
+            "update": {
+                "title": "Süüdistus uuendatud",
+                "message": "Uuendasid edukalt süüdistust id {{id}}"
+            },
+            "delete": {
+                "title": "Süüdistus kustutatud",
+                "message": "Kustutasid süüdistuse edukalt id #{{id}}"
+            },
+            "success": {
+                "title": "Süüdistus loodud",
+                "message": "Lõid süüdistuse #{{id}}"
+            }
+        }
+    },
+    "codes": {
+        "title": "Koodid",
+        "subtitle": "Otsi või loo koode",
+        "form": "Otsi koode",
+        "create": "Loo kood",
+        "button": "Loo kood",
+        "name": "Nimi",
+        "format": "Kood ({{format}})",
+        "code": {
+            "title": "Kood ({{code}})",
+            "subtitle": "See kood on loodud {{date}}"
+        },
+        "modal": {
+            "delete": {
+                "title": "Kustuta",
+                "message": "Kas sa soovid kustutada selle koodi?"
+            }
+        },
+        "notification": {
+            "error": {
+                "title": "Viga",
+                "message": "Midagi läks valesti koodi loomisel, proovi uuesti!"
+            },
+            "update": {
+                "title": "Kood uuendatud",
+                "message": "Muutsid edukalt koodi id {{id}}"
+            },
+            "delete": {
+                "title": "Kood kustutatud",
+                "message": "Kustutasid edukalt koodi #{{id}}"
+            },
+            "success": {
+                "title": "Kood loodud",
+                "message": "Lõid koodi #{{id}}"
+            }
+        }
+    },
+    "fines": {
+        "title": "Trahvid",
+        "subtitle": "Otsi või loo trahve",
+        "form": "Otsi trahve",
+        "create": "Loo trahv",
+        "button": "Loo trahv",
+        "name": "Nimi",
+        "code": "Kood ({{format}})",
+        "amount": "Summa",
+        "fine": {
+            "title": "Trahv #{{id}}",
+            "subtitle": "Trahv on loodud {{date}}"
+        },
+        "modal": {
+            "delete": {
+                "title": "Kutsuta",
+                "message": "Oled sa kindel, et tahad kustutada selle trahvi?"
+            }
+        },
+        "notification": {
+            "error": {
+                "title": "Viga",
+                "message": "Midagi läks valesti trahvi loomisel, proovi uuesti!"
+            },
+            "update": {
+                "title": "Trahv uuendatud",
+                "message": "Muutsite edukalt trahvi id {{id}}"
+            },
+            "delete": {
+                "title": "Trahv kustutatud",
+                "message": "Kustutasite edukalt trahvi #{{id}}"
+            },
+            "success": {
+                "title": "Trahv loodud",
+                "message": "Lõid trahvi #{{id}}"
+            }
+        }
+    },
+    "houses": {
+        "title": "Majad",
+        "subtitle": "Otsi maja id või aadressi järgi",
+        "form": "Otsi kinnistut",
+        "owned": "Omatud",
+        "house": {
+            "title": "Maja #{{id}}",
+            "subtitle": "See maja asub aadressil {{address}}",
+            "placeholder": "Vaata kõike infot selle kinnistu kohta"
+        },
+        "notification": {
+            "location": {
+                "title": "Sihtpunkt pandud",
+                "message": "Sellele kinnistule on pandud sihtpunkt"
+            }
+        }
+    },
+    "vehicles": {
+        "title": "Masinad",
+        "subtitle": "Otsi masinaid numbrimärgi järgi",
+        "form": "Otsi masinaid",
+        "owned": "Omatud",
+        "plate": "Numbrimärk",
+        "incidents": "Juhtumid",
+        "bolos": "Bolos",
+        "wanted": "TAHTIS",
+        "vehicle": {
+            "title": "Masin",
+            "subtitle": "Vaata kõike infot selle masina kohta"
+        },
+        "notification": {
+            "update": {
+                "title": "Masina informatsioon uuendatud",
+                "message": "Muutsite edukalt masina informatsiooni."
+            }
+        }
+    },
+    "warrants": {
+        "title": "Orderid",
+        "subtitle": "Otsi ordereid kodaniku või aadressi järgi",
+        "form": "Otsi ordereid",
+        "create": "Loo order",
+        "button": "Loo order",
+        "reason": "Põhjus",
+        "description": "Kirjeldus",
+        "type": "Orderi tüüp",
+        "players": "Kodanikud, kes olid seotud",
+        "house": "Majad",
+        "done": "Valmis",
+        "screenshot": "Tee kuvatõmmis",
+        "tabs": {
+            "link": "Link",
+            "screenshot": "Kuvatõmmis"
+        },
+        "types": {
+            "arrest": "Arrest",
+            "search": "Otsi"
+        },
+        "warrant": {
+            "title": "Order #{{id}}",
+            "subtitle": "See order on loodud {{date}}"
+        },
+        "modal": {
+            "delete": {
+                "title": "Kustuta",
+                "message": "Kas sa soovid kustutada selle orderi?"
+            }
+        },
+        "notification": {
+            "error": {
+                "title": "Viga",
+                "message": "Midagi läks valesti orderi loomisel, proovi uuesti!"
+            },
+            "update": {
+                "title": "Order uuendatud",
+                "message": "Muutsite edukalt orderit id {{id}}"
+            },
+            "delete": {
+                "title": "Order kustutatud",
+                "message": "Kustutasite orderi edukalt #{{id}}"
+            },
+            "success": {
+                "title": "Order loodud",
+                "message": "Order #{{id}} on loodud"
+            }
+        }
+    },
+    "officers": {
+        "title": "Ohvitserid",
+        "subtitle": "Vaata kõiki ohvitsere"
+    },
+    "bolos": {
+        "title": "Bolos",
+        "subtitle": "Otsi bolosid nime, auto numbrimärgi või pealkirja järgi",
+        "form": "Otsi bolosid",
+        "create": "Loo bolo",
+        "button": "Loo bolo",
+        "name": "Pealkiri",
+        "description": "Kirjeldus",
+        "type": "Bolo tüüp",
+        "players": "Kodanikud",
+        "vehicles": "Sõidukid",
+        "ended": "Lõppenud",
+        "types": {
+            "people": "Inimesed (Nimi)",
+            "vehicles": "Sõidukid (Numbrimärk)"
+        },
+        "bolo": {
+            "title": "BOLO #{{id}}",
+            "subtitle": "See bolo loodi {{date}}"
+        },
+        "tooltip": {
+            "description": "Saate BOLO-d muuta",
+            "end": "Saate selle BOLO lõpetada"
+        },
+        "modal": {
+            "delete": {
+                "title": "Kustuta",
+                "message": "Kas soovite selle bolo kustutada?"
+            },
+            "end": {
+                "title": "Lõpeta BOLO",
+                "message": "Kas soovite selle bolo lõpetada?"
+            }
+        },
+        "notification": {
+            "error": {
+                "title": "Viga",
+                "message": "Midagi läks bolo loomisel valesti, proovige uuesti!"
+            },
+            "update": {
+                "title": "BOLO uuendatud",
+                "message": "Olete edukalt uuendanud bolo #{{id}}"
+            },
+            "delete": {
+                "title": "BOLO kustutatud",
+                "message": "Olete edukalt kustutanud bolo #{{id}}"
+            },
+            "success": {
+                "title": "BOLO loodud",
+                "message": "Bolo #{{id}} on edukalt loodud"
+            },
+            "end": {
+                "title": "BOLO lõpetatud",
+                "message": "Olete edukalt lõpetanud bolo #{{id}}"
+            }
+        }
+    },
+    "announcements": {
+        "title": "Teadaanded",
+        "subtitle": "Vaata kõiki juhtide teadaandeid",
+        "list": "Nimekiri",
+        "form": "Vorm",
+        "search": "Otsi teadaandeid",
+        "pinned": "See teadaanne on kinnitatud",
+        "created": "Teadaanne loodud",
+        "create": "Loo teadaanne",
+        "name": "Pealkiri",
+        "button": "Loo teadaanne",
+        "modal": {
+            "delete": {
+                "title": "Kustuta",
+                "message": "Kas soovite selle teadaande kustutada?"
+            }
+        },
+        "announcement": {
+            "title": "Teadaanne #{{id}}",
+            "subtitle": "See teadaanne loodi {{date}}",
+            "edit": "Muuda",
+            "save": "Salvesta muudatused"
+        },
+        "notification": {
+            "error": {
+                "title": "Viga",
+                "message": "Midagi läks teadaande loomisel valesti, proovige uuesti!"
+            },
+            "update": {
+                "title": "Teadaanne uuendatud",
+                "message": "Olete edukalt muutnud teadaannet ID-ga {{id}}"
+            },
+            "delete": {
+                "title": "Teadaanne kustutatud",
+                "message": "Olete edukalt kustutanud teadaande #{{id}}"
+            },
+            "success": {
+                "title": "Teadaanne loodud",
+                "message": "Teadaanne #{{id}} on loodud"
+            }
+        }
+    },
+    "configuration": {
+        "title": "Seadistamine",
+        "subtitle": "Muuda MDT selliseks nagu sulle endale meeldib",
+        "colors": "Värvid",
+        "main_color": "Põhi värv",
+        "secondary_color": "Teine värv",
+        "third_color": "Kolmas värv",
+        "highlight_color": "Esile tõstetud värv",
+        "contrast_color": "Kontrast värv",
+        "text_color": "Teksti värv",
+        "language": "Keel",
+        "reset": "Lähtesta seaded",
+        "placeholder": "🌎 Keel",
+        "tooltip": {
+            "language": "See ei muuda keelt teistel inimestel"
+        }
+    },
+    "chat": {
+        "placeholder": "Kirjuta sõnum.."
+    },
+    "errors": {
+        "no-permission": "Teil puuduvad õigused selleks, et seda teha",
+        "incidents": {
+            "name": {
+                "length": "Nimi peab olema pikem kui 3 tähte",
+                "required": "Peate sisestama nime"
+            },
+            "description": {
+                "length": "Kirjeldus peab olema pikem kui 10 tähte",
+                "required": "Peate sisestama kirjelduse"
+            },
+            "players": {
+                "length": "Te peate valima vähemalt 1 kodaniku",
+                "required": "Te peate valima seotud kodaniku"
+            },
+            "cops": {
+                "length": "Te peate valima 1 politsei",
+                "required": "Te peate valima seotud politsei"
+            }
+        },
+        "evidences": {
+            "name": {
+                "length": "Nimi peab olema pikem kui 3 tähte",
+                "required": "Peate sisestama nime"
+            },
+            "description": {
+                "length": "Kirjeldus peab olema pikem kui 10 tähte",
+                "required": "Peate sisestama kirjelduse"
+            },
+            "images": {
+                "length": "Te peate lisama vähemalt 1 pildi",
+                "max": "Saate lisada ainult 9 pilti"
+            }
+        },
+        "bolos": {
+            "title": {
+                "length": "Pealkiri peab olema pikem kui 3 tähemärki",
+                "required": "Te peate esitama pealkirja"
+            },
+            "description": {
+                "length": "Kirjeldus peab olema pikem kui 10 tähemärki",
+                "required": "Te peate esitama kirjelduse"
+            },
+            "bolo_type": {
+                "required": "Te peate valima bolo tüübi"
+            }
+        },
+        "warrants": {
+            "reason": {
+                "length": "Põhjus peab olema rohkem kui 5 tähte",
+                "required": "Peate sisestama põhjuse"
+            },
+            "description": {
+                "length": "Kirjeldus peab olema pikem kui 10 tähte",
+                "required": "Peate sisestama kirjelduse"
+            },
+            "wtype": {
+                "required": "Peate valima orderi tüübi"
+            }
+        },
+        "alert": {
+            "title": {
+                "required": "Hoiatusel peab olema pealkiri"
+            },
+            "description": {
+                "required": "Te peate kirjutama midagi hoiatuse kirjeldusse."
+            }
+        },
+        "charges": {
+            "name": {
+                "required": "Te peate sisestama nime"
+            }
+        },
+        "codes": {
+            "name": {
+                "required": "Te peate sisestama nime"
+            },
+            "code": {
+                "required": "Te peate sisestama koodi",
+                "format": "Koodi vorming on vale"
+            }
+        },
+        "fines": {
+            "name": {
+                "required": "Te peate sisestama nime"
+            },
+            "code": {
+                "required": "Te peate sisestama koodi",
+                "format": "Koodi vorming on vale"
+            },
+            "amount": {
+                "required": "Te peate lisama summa"
+            }
+        }
+    },
+    "list": {
+        "not_found": "Tulemusi ei leitud"
+    },
+    "modal": {
+        "confirm": "Kinnita",
+        "close": "Sulge"
+    },
+    "common": {
+        "tooltip": {
+            "save": "Vajutage salvestamis ikooni peale, et salvestada väärtus",
+            "visit": "Vajutage siia, et vaadata omaniku profiili",
+            "waypoint": "Sellele kinnistule sihtpunkti määramiseks vajutage siia",
+            "image": "Pildi redigeerimiseks vasak klõps | Paremklõpsake pildi suurendamiseks",
+            "clear": "Vajutage siia, et eemaldada kõik valikud"
+        },
+        "modal": {
+            "clear_title": "Tühjenda vorm",
+            "clear_message": "Oled kindel, et soovid vormi väärtused tühjendada?"
+        }
+    },
+    "words": {
+        "error": "Viga",
+        "search": "Otsi",
+        "name": "Nimi",
+        "description": "Kirjeldus",
+        "amount": "Summa",
+        "months": "Kuud",
+        "street": "Tänav",
+        "warrants": "Orderid",
+        "information": "Informatsioon",
+        "firstname": "Eesnimi",
+        "lastname": "Perekonnanimi",
+        "gender": "Sugu",
+        "birth": "Sünnikuupäev",
+        "phone": "Telefoni number",
+        "job": "Töö",
+        "height": "Pikkus",
+        "notes": "Märkmed",
+        "yes": "Jah",
+        "no": "Ei",
+        "house": "Majad",
+        "online": "Võrgus",
+        "offline": "Võrguühenduseta",
+        "exit": "Välja"
+    },
+    "pages": {
+        "dashboard": "Armatuur",
+        "incidents": "Juhtumid",
+        "evidences": "Asitõendid",
+        "warrants": "Orderid",
+        "officers": "Ohvitserid",
+        "alerts": "Hoiatused",
+        "citizens": "Kodanikud",
+        "vehicles": "Masinad",
+        "houses": "Majad",
+        "fines": "Trahvid",
+        "codes": "Koodid",
+        "charges": "Süüdistused",
+        "announcements": "Teated",
+        "bolos": "Bolos",
+        "config": "Config"
+    }
+}

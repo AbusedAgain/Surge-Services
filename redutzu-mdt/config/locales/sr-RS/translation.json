@@ -1,0 +1,646 @@
+{
+    "dashboard": {
+        "title": "Dobro došli, {{name}}",
+        "subtitle": "{{grade}} | {{label}}",
+        "alerts": "Upozorenja",
+        "citizens": "Građani",
+        "vehicles": "Registrovana vozila",
+        "warrants": "Aktivni nalozi za hapšenje",
+        "officers": "Službenici u dužnosti"
+    },
+    "alerts": {
+        "title": "Poruka upozorenja",
+        "subtitle": "Pogledajte policijske upozorenja uzivo",
+        "form": "Pošaljite novu poruku upozorenja",
+        "button": "Posaljite",
+        "name": "Naslov upozorenja",
+        "description": "Opis",
+        "notification": {
+            "take": {
+                "title": "Poruka upozorenje",
+                "message": "Da li želite da pošaljete ovo upozorenje?"
+            },
+            "sent": {
+                "title": "Poruka upozorenje je poslato",
+                "message": "Poslato je upozorenje svim dostupnim službenicima!"
+            },
+            "opened": {
+                "title": "Novo poruka upozorenje",
+                "message": "Imate novo upozorenje! Pogledajte mapu da biste je videli."
+            },
+            "closed": {
+                "title": "Novo poruka upozorenje",
+                "message": "Imate novo upozorenje! Otvorite MDT i pogledajte mapu da biste je videli."
+            }
+        }
+    },
+    "incidents": {
+        "title": "Prekršajni nalog",
+        "subtitle": "Pretraživanje prekršaje",
+        "form": "Pretraga prekršaja",
+        "create": "Kreiranje prekršaje",
+        "button": "Unesi nalog",
+        "name": "Ime",
+        "description": "Činjenični opis",
+        "players": "lice",
+        "cops": "službeno lice",
+        "vehicles": "vozilo",
+        "evidences": "Dokaze",
+        "fines": "Kazne",
+        "fine_reduction": "Smanjenje novcane kazne na ({{amount}}$)",
+        "fine_full": "Kazna od ({{amount}}$) je smanjena na {{reduction}}",
+        "jail": "Optužbe",
+        "jail_reduction": "Smanjenje vreme zatvorske kazne na ({{amount}} meseci)",
+        "jail_full": "Vreme od ({{amount}} meseci) je smanjena na {{reduction}}",
+        "reducted": "Smanjeno",
+        "incident": {
+            "title": "Nalog sa brojom {{id}}",
+            "subtitle": "Ovaj nalog je napravljen {{date}} god."
+        },
+        "tooltip": {
+            "description": "Ovde možete da izmenite opis"
+        },
+        "modal": {
+            "delete": {
+                "title": "Izbrisanje",
+                "message": "Želite li da izbrišete ovaj nalog?"
+            }
+        },
+        "notification": {
+            "error": {
+                "title": "Greška",
+                "message": "Nešto je pošlo naopako pri stvaranju naloga, pokušajte ponovo!"
+            },
+            "update": {
+                "title": "Ažuriranje prekršajnog naloga",
+                "message": "Uspešno ste promenili činjenični opis naloga sa brojem {{id}}"
+            },
+            "delete": {
+                "title": "Izbrisanje prekršajnog naloga",
+                "message": "Uspešno ste izbrisali nalog sa brojem {{id}}"
+            },
+            "success": {
+                "title": "Registracija prekršajnog naloga",
+                "message": "Prekršajni nalog sa brojem {{id}} je registrovan"
+            }
+        }
+    },
+    "evidences": {
+        "title": "Dokazi",
+        "subtitle": "Pretraga dokaze",
+        "form": "Potraži dokaze",
+        "create": "Kreiranje dokaza",
+        "button": "Kreiraj dokaz",
+        "name": "Ime",
+        "description": "Opis dokaza",
+        "players": "lice",
+        "images": "Slike",
+        "evidence": {
+            "title": "Dokaz - Broj: {{id}}",
+            "subtitle": "Ovaj dokaz je napravljeno {{date}} god."
+        },
+        "modal": {
+            "delete": {
+                "title": "Brisanje",
+                "message": "Želite da izbrišete ovaj dokaz?"
+            }
+        },
+        "notification": {
+            "error": {
+                "title": "Greška",
+                "message": "Nešto je pošlo naopako pri kreiranju dokaza, pokušajte ponovo!"
+            },
+            "update": {
+                "title": "Ažuriranje dokaza",
+                "message": "Uspešno ste promenili dokaz sa Brojem {{id}}"
+            },
+            "delete": {
+                "title": "Izbrisanje dokaza",
+                "message": "Uspešno ste promenili dokaz sa brojem {{id}}"
+            },
+            "success": {
+                "title": "Registrovanje dokaza",
+                "message": "Dokaz sa brojem {{id}} je registrovan"
+            }
+        }
+    },
+    "citizens": {
+        "title": "Građani",
+        "subtitle": "Potraga građana",
+        "form": "Potraži građane",
+        "wanted": "Potraga",
+        "incidents": "Prekršaje",
+        "evidences": "Dokaze",
+        "warrants": "Poternice",
+        "vehicles": "Vozilo",
+        "properties": "Nekretnine",
+        "bolos": "Bolos",
+        "licenses": "Dozvole",
+        "licenses_list": {
+            "dmv": "Pismeni vozački izpit",
+            "drive": "Vozačka dozvola",
+            "drive_bike": "Dozvola za motocikl",
+            "drive_truck": "Komercijalna vozačka dozvola",
+            "weed_processing": "Dozvola za obradu kanabisa"
+        },
+        "citizen": {
+            "title": "Građanin",
+            "subtitle": "Pogledajte sve informacije o ovom građaninu"
+        },
+        "modal": {
+            "license_remove": {
+                "title": "Ukloni dozvolu",
+                "message": "Da li želite da uklonite ovu dozvolu?"
+            }
+        },
+        "notification": {
+            "update": {
+                "title": "Ažuriranje informacija građanina",
+                "message": "Uspešno ste promenili informacije o građanina"
+            },
+            "take": {
+                "title": "Oduzeta Dozvola",
+                "message": "Oduzeli ste dozvolu ovog građanina"
+            }
+        }
+    },
+    "charges": {
+        "title": "Kazne",
+        "subtitle": "Pretražite ili kreirajte kazne",
+        "form": "Potražite kazne",
+        "create": "Kreiranje kazne",
+        "button": "Kreirajte kaznu",
+        "name": "Ime",
+        "time": "Vreme ({{time}} meseci)",
+        "charge": {
+            "title": "Kazna - Broj: {{id}}",
+            "subtitle": "Ova kazna je kreirana {{date}} god."
+        },
+        "modal": {
+            "delete": {
+                "title": "Izbrisanje",
+                "message": "Želite li da izbrišete ovu kaznu?"
+            }
+        },
+        "notification": {
+            "error": {
+                "title": "Greška",
+                "message": "Nešto je pošlo naopako pri kreiranju kazne, pokušajte ponovo!"
+            },
+            "update": {
+                "title": "Ažuriranje kazne",
+                "message": "Uspešno ste promenili kaznu sa brojem {{id}}"
+            },
+            "delete": {
+                "title": "Izbrisanje kazne",
+                "message": "Uspešno ste izbrisali kaznu sa brojem {{id}}"
+            },
+            "success": {
+                "title": "Registrovanje kazne",
+                "message": "Kazna sa brojem {{id}} je registrovan"
+            }
+        }
+    },
+    "codes": {
+        "title": "Kod",
+        "subtitle": "Pretraga ili registracija koda",
+        "form": "Pretraži kod",
+        "create": "Registracija novog koda",
+        "button": "Registruj kod",
+        "name": "Ime",
+        "format": "Kod ({{format}})",
+        "code": {
+            "title": "Kod ({{code}})",
+            "subtitle": "Ovaj kod je registrovan {{date}} god."
+        },
+        "modal": {
+            "delete": {
+                "title": "Izbriši",
+                "message": "Hocete li da izbrisete ovaj kod?"
+            }
+        },
+        "notification": {
+            "error": {
+                "title": "Greška",
+                "message": "Nešto je pošlo naopako pri stvaranju koda, pokušajte ponovo!"
+            },
+            "update": {
+                "title": "Kod ažuriran",
+                "message": "Uspešno ste promenili kod sa brojem {{id}}"
+            },
+            "delete": {
+                "title": "Izbrisanje Koda",
+                "message": "Uspešno ste izbrisali kod sa brojem #{{id}}"
+            },
+            "success": {
+                "title": "Registracija Koda",
+                "message": "Kod sa brojem {{id}} je registrovan"
+            }
+        }
+    },
+    "fines": {
+        "title": "Novčane kazne",
+        "subtitle": "Pretraga ili registracija kazne",
+        "form": "Potraži kazne",
+        "create": "Registracija novčane kazne",
+        "button": "Kreiraj kaznu",
+        "name": "Ime",
+        "code": "Broj koda ({{format}})",
+        "amount": "Iznos",
+        "fine": {
+            "title": "Novčana kazna sa brojem {{id}}",
+            "subtitle": "Ova novčana kazna je registrovana {{date}} god."
+        },
+        "modal": {
+            "delete": {
+                "title": "Brisanje kazne",
+                "message": "Hocete li da izbrišete ovu kaznu?"
+            }
+        },
+        "notification": {
+            "error": {
+                "title": "Greška",
+                "message": "Nešto je pošlo naopako pri stvaranju novčane kazne, pokušajte ponovo!"
+            },
+            "update": {
+                "title": "Ažuriranje novčane kazne",
+                "message": "Uspešno ste promenili novčanu kaznu sa brojem {{id}}"
+            },
+            "delete": {
+                "title": "Izbrisanje novčane kazne",
+                "message": "Uspešno ste izbrisali novčanu kaznu sa brojem {{id}}"
+            },
+            "success": {
+                "title": "Registracija novčane kazne",
+                "message": "Novčana kazna sa brojem {{id}} je registrovan"
+            }
+        }
+    },
+    "houses": {
+        "title": "Nekretnine",
+        "subtitle": "Pretraga nekretnina sa brojem ili adrese",
+        "form": "Potraži nekretnine",
+        "owned": "Vlasništvo",
+        "house": {
+            "title": "Nekretnina sa brojem {{id}}",
+            "subtitle": "Ova nekretnina se nalazi u {{address}}",
+            "placeholder": "Prikažite sve informacije o nekretnini"
+        },
+        "notification": {
+            "location": {
+                "title": "Postavite odredište za navigaciju",
+                "message": "Odredište za navigaciju do te nekretnine je podešavana"
+            }
+        }
+    },
+    "vehicles": {
+        "title": "Vozila",
+        "subtitle": "Pretraga vozila sa registarske tablice",
+        "form": "Protraži vozilo",
+        "owned": "Vlasništvo",
+        "plate": "Registarska tablica",
+        "incidents": "Prekršaj",
+        "bolos": "Bolos",
+        "wanted": "ŽELEO",
+        "vehicle": {
+            "title": "Vozilo",
+            "subtitle": "Pogledajte sve informacije o ovom vozilu"
+        },
+        "notification": {
+            "update": {
+                "title": "Ažuriranje informacije o vozilu",
+                "message": "Uspešno ste ažurirali informacije o vozilu"
+            }
+        }
+    },
+    "warrants": {
+        "title": "Nalozi za hapšenje",
+        "subtitle": "Pretraga nalog za hapšenje po građaninu ili adresi",
+        "form": "Pretraži nalog za hapšenje",
+        "create": "Registracija naloga za hapšenje",
+        "button": "Registrujte nalog",
+        "reason": "Razlog",
+        "description": "Opis",
+        "type": "Tip naloga",
+        "players": "lice",
+        "house": "Nekretnine",
+        "done": "Gotovo",
+        "screenshot": "Napravi screenshot",
+        "tabs": {
+            "link": "Link",
+            "screenshot": "Screenshot"
+        },
+        "types": {
+            "arrest": "Hapšenje",
+            "search": "Traži"
+        },
+        "warrant": {
+            "title": "Nalog za hapšenje {{id}}",
+            "subtitle": "Ovaj nalog je registrovan {{date}} god."
+        },
+        "modal": {
+            "delete": {
+                "title": "Brišanje",
+                "message": "Hoćete li da izbrišete ovaj nalog?"
+            }
+        },
+        "notification": {
+            "error": {
+                "title": "Greška",
+                "message": "Nešto je pošlo naopako pri kreiranju naloga, pokušajte ponovo!"
+            },
+            "update": {
+                "title": "Ažuriranje naloga",
+                "message": "Uspešno ste promenili nalog sa brojem {{id}}"
+            },
+            "delete": {
+                "title": "Izbrisanje naloga",
+                "message": "Uspešno ste izbrisali nalog sa brojem {{id}}"
+            },
+            "success": {
+                "title": "Registrovanje naloga",
+                "message": "Uspešno ste registrovali nalog sa brojem {{id}}"
+            }
+        }
+    },
+    "officers": {
+        "title": "Službeno lice",
+        "subtitle": "Pokažite sva službena lica"
+    },
+    "bolos": {
+        "title": "Bolos",
+        "subtitle": "Pretražite bolos-e po imenu, registarskom broju ili naslovu",
+        "form": "Pretraži bolos-e",
+        "create": "Kreirajte bolo",
+        "button": "Kreirajte bolo",
+        "name": "Naslov",
+        "description": "Opis",
+        "type": "Vrsta bolo-a",
+        "players": "Građani",
+        "vehicles": "Vozila",
+        "ended": "Završeno",
+        "types": {
+            "people": "Ljudi (Ime)",
+            "vehicles": "Vozila (Registarski broj)"
+        },
+        "bolo": {
+            "title": "BOLO #{{id}}",
+            "subtitle": "Ovaj bolo je kreiran {{date}}"
+        },
+        "tooltip": {
+            "description": "Možete urediti BOLO",
+            "end": "Možete završiti ovaj BOLO"
+        },
+        "modal": {
+            "delete": {
+                "title": "Obriši",
+                "message": "Da li želite da obrišete ovaj bolo?"
+            },
+            "end": {
+                "title": "Završi BOLO",
+                "message": "Da li želite da završite ovaj bolo?"
+            }
+        },
+        "notification": {
+            "error": {
+                "title": "Greška",
+                "message": "Nešto je pošlo po zlu prilikom kreiranja bolo-a, pokušajte ponovo!"
+            },
+            "update": {
+                "title": "BOLO ažuriran",
+                "message": "Uspešno ste ažurirali bolo #{{id}}"
+            },
+            "delete": {
+                "title": "BOLO obrisan",
+                "message": "Uspešno ste obrisali bolo #{{id}}"
+            },
+            "success": {
+                "title": "BOLO kreiran",
+                "message": "Bolo #{{id}} je uspešno kreiran"
+            },
+            "end": {
+                "title": "BOLO završen",
+                "message": "Uspešno ste završili bolo #{{id}}"
+            }
+        }
+    },
+    "announcements": {
+        "title": "Obaveštenja",
+        "subtitle": "Prikaži sva obaveštenja koja su napravili šefovi",
+        "list": "Lista",
+        "form": "Formular",
+        "search": "Pretraži obaveštenja",
+        "pinned": "Ovo obaveštenje je zakačeno",
+        "created": "Obaveštenje kreirano",
+        "create": "Kreiraj obaveštenje",
+        "name": "Naslov",
+        "button": "Kreiraj obaveštenje",
+        "modal": {
+            "delete": {
+                "title": "Obriši",
+                "message": "Da li želite da obrišete ovo obaveštenje?"
+            }
+        },
+        "announcement": {
+            "title": "Obaveštenje #{{id}}",
+            "subtitle": "Ovo obaveštenje je kreirano {{date}}",
+            "edit": "Uredi",
+            "save": "Sačuvaj promene"
+        },
+        "notification": {
+            "error": {
+                "title": "Greška",
+                "message": "Došlo je do greške prilikom kreiranja obaveštenja, pokušajte ponovo!"
+            },
+            "update": {
+                "title": "Obaveštenje ažurirano",
+                "message": "Uspešno ste promenili obaveštenje sa id-jem {{id}}"
+            },
+            "delete": {
+                "title": "Obaveštenje obrisano",
+                "message": "Uspešno ste obrisali obaveštenje #{{id}}"
+            },
+            "success": {
+                "title": "Obaveštenje kreirano",
+                "message": "Obaveštenje #{{id}} je uspešno kreirano"
+            }
+        }
+    },
+    "configuration": {
+        "title": "Konfiguracija",
+        "subtitle": "Prilagodite MDT po svom ukusu",
+        "colors": "Boje",
+        "main_color": "Glavna boja",
+        "secondary_color": "Sekundarna boja",
+        "third_color": "Tercijarne boja",
+        "highlight_color": "Istaknuta boja",
+        "contrast_color": "Kontrastna boja",
+        "text_color": "Boja teksta",
+        "language": "Jezik",
+        "reset": "Resetuj podešavanja",
+        "placeholder": "🌎 Jezik",
+        "tooltip": {
+            "language": "Ova opcija neće da promeni jezik za sve korisnike!"
+        }
+    },
+    "chat": {
+        "placeholder": "Unesi poruku.."
+    },
+    "errors": {
+        "no-permission": "Ovo vam nije dozvoljeno",
+        "incidents": {
+            "name": {
+                "length": "Ime mora da bude duže od tri karaktera",
+                "required": "Morate da upišete ime"
+            },
+            "description": {
+                "length": "Opis mora da bude duži od deset karaktera",
+                "required": "Morate da upišete opis"
+            },
+            "players": {
+                "length": "Morate da izaberete najmanje jednog građanina",
+                "required": "Morate da odaberete lice"
+            },
+            "cops": {
+                "length": "Morate da izaberete najmanje jedno službeno lice",
+                "required": "Morate da odaberete službeno lice"
+            }
+        },
+        "evidences": {
+            "name": {
+                "length": "Ime dokaza moraju da budu duže od tri karaktera",
+                "required": "Morate da upišete ime dokaza"
+            },
+            "description": {
+                "length": "Opis dokaza moraju da budu duži od deset karaktera",
+                "required": "Morate da upišete opis dokaza"
+            },
+            "images": {
+                "length": "Trebate da unesete najmanje jednu sliku",
+                "max": "Možete da ubacite najviše devet slika"
+            }
+        },
+        "bolos": {
+            "title": {
+                "length": "Naslov mora sadržavati više od 3 karaktera",
+                "required": "Morate pružiti naslov"
+            },
+            "description": {
+                "length": "Opis mora sadržavati više od 10 karaktera",
+                "required": "Morate pružiti opis"
+            },
+            "bolo_type": {
+                "required": "Morate izabrati vrstu bolo-a"
+            }
+        },
+        "warrants": {
+            "reason": {
+                "length": "Razlozi za naloge moraju da budu duži od pet karaktera",
+                "required": "Morate da unesete razlog naloga"
+            },
+            "description": {
+                "length": "Opis za naloge moraju da budu duži od deset karaktera",
+                "required": "Morate da unesete opis naloga"
+            },
+            "wtype": {
+                "required": "Morate da unesete tip naloga"
+            }
+        },
+        "alert": {
+            "title": {
+                "required": "Morate da unesete naslov upozorenja"
+            },
+            "description": {
+                "required": "Morate da unesete opis upozorenja"
+            }
+        },
+        "charges": {
+            "name": {
+                "required": "Morate da unesete ime"
+            }
+        },
+        "codes": {
+            "name": {
+                "required": "Morate da unesete ime"
+            },
+            "code": {
+                "required": "Morate da unesete kod",
+                "format": "Format koda je pogrešan"
+            }
+        },
+        "fines": {
+            "name": {
+                "required": "Morate da unesete ime"
+            },
+            "code": {
+                "required": "Morate da unesete kod",
+                "format": "Format koda je pogrešan"
+            },
+            "amount": {
+                "required": "Morate da unesete iznos"
+            }
+        }
+    },
+    "list": {
+        "not_found": "Nema rezultata"
+    },
+    "modal": {
+        "confirm": "Potvrdite",
+        "close": "Odbacite"
+    },
+    "common": {
+        "tooltip": {
+            "save": "Kliknite na ikonu za čuvanje da bi se sačuvalo unešeni tekst",
+            "visit": "Kliknite ovde da posetite profil građana",
+            "waypoint": "Kliknite ovde da postavite odredište za navigaciju do navedene nekretnine",
+            "image": "Kliknite levim klikom da biste uredili sliku | Kliknite desnim tasterom miša da zumirate sliku",
+            "clear": "Kliknite ovde da biste obrisali sve unete podatke"
+        },
+        "modal": {
+            "clear_title": "Obriši formu",
+            "clear_message": "Da li ste sigurni da želite da obrišete vrednosti forme?"
+        }
+    },
+    "words": {
+        "error": "Greška",
+        "search": "Pretraga",
+        "name": "Ime",
+        "description": "Opis",
+        "amount": "Iznos",
+        "months": "meseci",
+        "street": "Ulica",
+        "warrants": "Naloge",
+        "information": "Informacija",
+        "firstname": "Ime",
+        "lastname": "Prezime",
+        "gender": "pol",
+        "birth": "Datum rođenja",
+        "phone": "Broj telefona",
+        "job": "Posao",
+        "height": "Visina",
+        "notes": "Beleške",
+        "yes": "Da",
+        "no": "Ne",
+        "house": "Nekretnine",
+        "online": "Online",
+        "offline": "Offline",
+        "exit": "Izlaz"
+    },
+    "pages": {
+        "dashboard": "Dashboard",
+        "incidents": "Prekršaji",
+        "evidences": "Dokazi",
+        "warrants": "Nalozi",
+        "officers": "Sluzbeno lice",
+        "alerts": "Upozorenje",
+        "citizens": "Građani",
+        "vehicles": "Vozilo",
+        "houses": "Nekretnine",
+        "fines": "Novčane kazne",
+        "codes": "Kod",
+        "charges": "Kazne",
+        "announcements": "Obaveštenja",
+        "bolos": "Bolos",
+        "config": "Konfiguracija"
+    }
+}

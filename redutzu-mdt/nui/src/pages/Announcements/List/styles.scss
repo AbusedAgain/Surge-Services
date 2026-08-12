@@ -1,0 +1,13 @@
+@import '../../../globals.scss';
+
+.announcements {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    font-family: 'Montserrat', sans-serif;
+    .announcements-list {
+        display: grid;
+		grid-auto-rows: 6.5rem;
+        gap: .7rem;
+    }
+}

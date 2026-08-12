@@ -1,0 +1,92 @@
+@import '../../globals.scss';
+
+.alerts-container {
+	padding-inline: 1rem;
+	.alerts-header {
+		display: flex;
+		align-items: center;
+		height: 2rem;
+		padding-bottom: .5rem;
+		padding-inline: 1.5rem;
+		h1 {
+			display: flex;
+			position: relative;
+			font-family: 'Montserrat', sans-serif;
+			font-weight: 600;
+			font-size: 1.5vh;
+			color: rgba(var(--text), .7);
+			padding-inline: 1.5rem;
+			&::before, &::after {
+				content: '';
+				position: absolute;
+				align-self: center;
+				width: 1rem;
+				height: 2px;
+				border-radius: .5rem;
+				background-color: rgba(var(--text), .7);
+			}
+			&::before {
+				left: 0;
+			}
+			&::after {
+				right: 0;
+			}
+		}
+	}
+	.alerts-list {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+		grid-gap: .7em;
+		max-height: 65vh;
+		overflow-y: scroll;
+		scroll-behavior: smooth;
+		scrollbar-width: none;
+		&::-webkit-scrollbar {
+			display: none;
+		}
+		.alert {
+			user-select: none;
+			cursor: pointer;
+			box-sizing: border-box;
+			background-color: rgba(var(--secondary), 1);
+			border: 1px solid rgba(var(--third), 1);
+			border-radius: 5px;
+			padding: 1rem;
+			padding-left: 1.5rem;
+			display: flex;
+			align-items: center;
+			gap: 1rem;
+			color: rgba(var(--text), .7);
+			transition: background-color .2s ease-in-out, border-color .2s ease-in-out;
+			&:hover {
+				background-color: rgba(var(--secondary), .5);
+				border-color: rgba(var(--third), .5);
+			}
+			i {
+				font-size: 3vh;
+			}
+			.text {
+				display: flex;
+				flex-direction: column;
+				font-family: 'Montserrat', sans-serif;
+				.header {
+					overflow: hidden;
+					h1 {
+						font-weight: 700;
+						font-size: 1.4vh;
+					}
+					p {
+						font-weight: 400;
+						font-size: 1.1vh;
+						max-width: 280px;
+						white-space: nowrap;
+					}
+				}
+				p {
+					font-weight: 300;
+					font-size: 1vh;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,43 @@
+@import '../../../../globals.scss';
+
+.announcement {
+    cursor: pointer;
+    padding-inline: 1vh;
+    padding-block: 1.5vh;
+    background-color: rgba(var(--secondary), 1);
+    border: 1px solid rgba(var(--third), 1);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+    transition: transform .3s ease-in-out;
+    h1 {
+        display: flex;
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: rgba(var(--text), 1);
+        .tooltip {
+            margin-right: .5rem;
+        }
+    }
+    h2 {
+        font-size: .8rem;
+        font-weight: 600;
+        color: rgba(var(--text), .7);
+        max-width: 60vw;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        span {
+            color: rgba(var(--contrast), 1);
+        }
+    }
+    p {
+        font-size: .7rem;
+        font-weight: 500;
+        color: rgba(var(--text), .7);
+    }
+    &:hover {
+        transform: translateY(-2.5px) scale(1.01);
+    }
+}

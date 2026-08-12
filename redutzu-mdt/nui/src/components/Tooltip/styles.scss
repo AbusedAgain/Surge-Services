@@ -1,0 +1,21 @@
+@import '../../globals.scss';
+
+.tooltip {
+	width: fit-content;
+	cursor: grabbing;
+}
+
+[data-id="tooltip"] {
+	margin-top: 0 !important;
+	border: 1px solid rgba(var(--third), 1) !important;
+	background-color: rgba(var(--secondary), 1) !important;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	font-size: 1vh !important;
+	color: rgba(var(--text), 1) !important;
+	padding-inline: 1rem !important;
+	&::after {
+		border: 1px solid rgba(var(--third), 1) !important;
+		background-color: rgba(var(--secondary), 1) !important;
+	}
+}

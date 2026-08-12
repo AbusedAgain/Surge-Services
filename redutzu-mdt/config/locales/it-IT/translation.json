@@ -1,0 +1,646 @@
+{
+    "dashboard": {
+        "title": "Ben Tornato, {{name}}",
+        "subtitle": "{{grade}} | {{label}}",
+        "alerts": "Chiamate",
+        "citizens": "Cittadini",
+        "vehicles": "Veicoli Registrati",
+        "warrants": "Mandati Attivi",
+        "officers": "Agenti Disponibili"
+    },
+    "alerts": {
+        "title": "Chiamate",
+        "subtitle": "Visualizza in tempo reale le chiamate",
+        "form": "Invia una chiamata",
+        "button": "Invia chiamata",
+        "name": "Titolo della chiamata",
+        "description": "Descrizione",
+        "notification": {
+            "take": {
+                "title": "Chiamata",
+                "message": "Vuoi prenderti carico di questa chiamata?"
+            },
+            "sent": {
+                "title": "Chiamata inviata",
+                "message": "Chiamata inoltrata agli altri agenti!"
+            },
+            "opened": {
+                "title": "Nuova Chiamata!",
+                "message": "Hai una nuova chiamata! Apri la tabella delle chiamate per visualizzarla."
+            },
+            "closed": {
+                "title": "New Alert",
+                "message": "Hai una nuova chiamata! Apri l'MDT e vai alla tabella delle chiamate per visualizzarla."
+            }
+        }
+    },
+    "incidents": {
+        "title": "Rapporti",
+        "subtitle": "Ricerca rapporto",
+        "form": "Cerca tra i rapporti",
+        "create": "Crea rapporto",
+        "button": "Crea rapporto",
+        "name": "Nome",
+        "description": "Descrizione",
+        "players": "Civili coinvolti",
+        "cops": "Agenti coinvolti",
+        "vehicles": "Veicoli coinvolti",
+        "evidences": "Prove",
+        "fines": "Multe",
+        "fine_reduction": "Decurtazione multa ({{amount}}$)",
+        "fine_full": "Multe ({{amount}}$) {{reduction}}",
+        "jail": "Accuse",
+        "jail_reduction": "Decurtazione di pena ({{amount}} months)",
+        "jail_full": "Accuse ({{amount}} months) {{reduction}}",
+        "reducted": "Ridotte",
+        "incident": {
+            "title": "Rapporto #{{id}}",
+            "subtitle": "Creato in data {{date}}"
+        },
+        "tooltip": {
+            "description": "Puoi modificare la descrizione"
+        },
+        "modal": {
+            "delete": {
+                "title": "Elimina",
+                "message": "Vuoi eliminare questo rapporto?"
+            }
+        },
+        "notification": {
+            "error": {
+                "title": "Errore",
+                "message": "Qualcosa è andato storto nel creare il rapporto, riprova o segnala il problema!"
+            },
+            "update": {
+                "title": "Rapporto aggiornato",
+                "message": "Descrizione del rapporto #{{id}} cambiata con successo"
+            },
+            "delete": {
+                "title": "Rapporto eliminato",
+                "message": "Eliminazione del rapporto #{{id}} completata"
+            },
+            "success": {
+                "title": "Rapporto creato",
+                "message": "Rapporto #{{id}} creato"
+            }
+        }
+    },
+    "evidences": {
+        "title": "Prove",
+        "subtitle": "Ricerca prove",
+        "form": "Cerca prove",
+        "create": "Carica una prova",
+        "button": "Crea prova",
+        "name": "Nome",
+        "description": "Descrizione",
+        "players": "Civili coinvolti",
+        "images": "Immagini",
+        "evidence": {
+            "title": "Prova #{{id}}",
+            "subtitle": "Prova creata in data {{date}}"
+        },
+        "modal": {
+            "delete": {
+                "title": "Elimina",
+                "message": "Vuoi eiliminare questa prova?"
+            }
+        },
+        "notification": {
+            "error": {
+                "title": "Errore",
+                "message": "Qualcosa è andato storto nel creare la prova, riprova o segnala il problema!"
+            },
+            "update": {
+                "title": "Prova aggiornata",
+                "message": "Prova {{id}} modificata con successo"
+            },
+            "delete": {
+                "title": "Prova eliminata",
+                "message": "Prova #{{id}} eliminata"
+            },
+            "success": {
+                "title": "Prova aggiunta",
+                "message": "Prova #{{id}} aggiunta"
+            }
+        }
+    },
+    "citizens": {
+        "title": "Cittadini",
+        "subtitle": "Ricerca cittadino",
+        "form": "Cerca cittadini",
+        "wanted": "RICERCATO",
+        "incidents": "Rapporti",
+        "evidences": "Prove",
+        "warrants": "Mandati",
+        "vehicles": "Veicoli",
+        "properties": "Proprietà",
+        "bolos": "Bolos",
+        "licenses": "Licenze",
+        "licenses_list": {
+            "dmv": "Licenza di guida",
+            "drive": "Patente di guida per autoveicoli",
+            "drive_bike": "Patente di guida per motoveicoli",
+            "drive_truck": "Patente di guida per autocarri",
+            "weed_processing": "Licenza di processamento per la Cannabis"
+        },
+        "citizen": {
+            "title": "Cittadino",
+            "subtitle": "Visualizza le informazioni del cittadino"
+        },
+        "modal": {
+            "license_remove": {
+                "title": "Sospendi licenza",
+                "message": "Vuoi sospendere questa licenza?"
+            }
+        },
+        "notification": {
+            "update": {
+                "title": "Informazioni sul cittadino aggiornate",
+                "message": "Informazioni sul cittadino aggiornate con successo"
+            },
+            "take": {
+                "title": "Licenza sospesa",
+                "message": "Hai sospeso la licenza di questo cittadino"
+            }
+        }
+    },
+    "charges": {
+        "title": "Accuse",
+        "subtitle": "Cerca o crea accuse",
+        "form": "Cerca accuse",
+        "create": "Crea un capo d'accusa",
+        "button": "Crea accusa",
+        "name": "Nome",
+        "time": "Tempo ({{time}} mesi)",
+        "charge": {
+            "title": "Accusa #{{id}}",
+            "subtitle": "Accusa creata in data {{date}}"
+        },
+        "modal": {
+            "delete": {
+                "title": "Elimina",
+                "message": "Vuoi eliminare questo capo d'accusa?"
+            }
+        },
+        "notification": {
+            "error": {
+                "title": "Errore",
+                "message": "Qualcosa è andato storto nel creare il capo d'accusa, riprova o segnala il problema!"
+            },
+            "update": {
+                "title": "Accusa aggiornata",
+                "message": "Accusa {{id}} aggiornata"
+            },
+            "delete": {
+                "title": "Accusa eliminata",
+                "message": "Hai eliminato il capo d'accusa #{{id}}"
+            },
+            "success": {
+                "title": "Accusa aggiunta",
+                "message": "Hai aggiunto il capo d'accusa #{{id}}"
+            }
+        }
+    },
+    "codes": {
+        "title": "Codici",
+        "subtitle": "Cerca o crea codici",
+        "form": "Cerca codici",
+        "create": "Crea un codice",
+        "button": "Crea codice",
+        "name": "Nome",
+        "format": "Codice ({{format}})",
+        "code": {
+            "title": "Codice ({{code}})",
+            "subtitle": "Questo codice è stato creato in data {{date}}"
+        },
+        "modal": {
+            "delete": {
+                "title": "Elimina",
+                "message": "Vuoi eliminare questo codice?"
+            }
+        },
+        "notification": {
+            "error": {
+                "title": "Errore",
+                "message": "Qualcosa è andato storto nel creare il codice, riprova o segnala il problema!"
+            },
+            "update": {
+                "title": "Codice aggiornato",
+                "message": "Codice {{id}} aggiornato con successo"
+            },
+            "delete": {
+                "title": "Codice eliminato",
+                "message": "Codice #{{id}} eliminato con successo"
+            },
+            "success": {
+                "title": "Codice creato",
+                "message": "Codice #{{id}} è stato creato"
+            }
+        }
+    },
+    "fines": {
+        "title": "Multe",
+        "subtitle": "Cerca o Crea Multe",
+        "form": "Cerca Multa",
+        "create": "Crea una multa",
+        "button": "Crea multa",
+        "name": "Nome",
+        "code": "Codice ({{format}})",
+        "amount": "Circa",
+        "fine": {
+            "title": "Multa #{{id}}",
+            "subtitle": "Multa creata in data {{date}}"
+        },
+        "modal": {
+            "delete": {
+                "title": "Elimina",
+                "message": "Vuoi eliminare questa multa?"
+            }
+        },
+        "notification": {
+            "error": {
+                "title": "Errore",
+                "message": "Qualcosa è andato storto nel creare la multa, riprova o segnala il problema!"
+            },
+            "update": {
+                "title": "Multa aggiornata",
+                "message": "Multa {{id}} aggiornata con successo"
+            },
+            "delete": {
+                "title": "Multa eliminata",
+                "message": "Multa #{{id}} eliminata con successo"
+            },
+            "success": {
+                "title": "Multa creata",
+                "message": "Multa #{{id}} creata con successo"
+            }
+        }
+    },
+    "houses": {
+        "title": "Abitazioni",
+        "subtitle": "Ricerca abitazione tramite ID o indirizzo",
+        "form": "Ricerca Proprietà",
+        "owned": "Posseduta",
+        "house": {
+            "title": "Abitazione #{{id}}",
+            "subtitle": "L'abitazione si trova al {{address}}",
+            "placeholder": "Visualizza informazioni sulla proprietà"
+        },
+        "notification": {
+            "location": {
+                "title": "Rotta impostata",
+                "message": "Rotta impostata verso l'abitazione"
+            }
+        }
+    },
+    "vehicles": {
+        "title": "Veicoli",
+        "subtitle": "Ricerca veicolo per numero di targa",
+        "form": "Cerca veicoli",
+        "owned": "Posseduto",
+        "plate": "Targa",
+        "incidents": "Rapporti",
+        "bolos": "Bolos",
+        "wanted": "RICERCATA",
+        "vehicle": {
+            "title": "Veicolo",
+            "subtitle": "Visualizza le informazioni su questo veicolo"
+        },
+        "notification": {
+            "update": {
+                "title": "Informazioni sul veicolo aggiornate",
+                "message": "Informazioni sul veicolo aggiornate con successo"
+            }
+        }
+    },
+    "warrants": {
+        "title": "Mandati",
+        "subtitle": "Cerca mandati per nome o indirizzo",
+        "form": "Ricerca mandati",
+        "create": "Crea un mandato",
+        "button": "Crea mandato",
+        "reason": "Ragione",
+        "description": "Descrizione",
+        "type": "Tipo di mandato",
+        "players": "Cittadini coinvolti",
+        "house": "Abitazioni",
+        "done": "Fatto",
+        "screenshot": "Fai uno screenshot",
+        "tabs": {
+            "link": "Link",
+            "screenshot": "Screenshot"
+        },
+        "types": {
+            "arrest": "Arresto",
+            "search": "Di ricerca"
+        },
+        "warrant": {
+            "title": "Mandato #{{id}}",
+            "subtitle": "Questo mandato è stato creato in data {{date}}"
+        },
+        "modal": {
+            "delete": {
+                "title": "Elimina",
+                "message": "Vuoi eliminare questo mandato?"
+            }
+        },
+        "notification": {
+            "error": {
+                "title": "Errore",
+                "message": "Qualcosa è andato storto nel creare il mandato, riprova o segnala il problema!"
+            },
+            "update": {
+                "title": "Mandato aggiornato",
+                "message": "Mandato {{id}} aggiornato con successo"
+            },
+            "delete": {
+                "title": "Mandato Eliminato",
+                "message": "Mandato #{{id}} eliminato con successo"
+            },
+            "success": {
+                "title": "Mandato creato",
+                "message": "Mandato #{{id}} creato con successo"
+            }
+        }
+    },
+    "officers": {
+        "title": "Agenti",
+        "subtitle": "Visualizza tutti gli agenti"
+    },
+    "bolos": {
+        "title": "Bolos",
+        "subtitle": "Ricerca bolos per nome, targa o titolo",
+        "form": "Ricerca bolos",
+        "create": "Crea un bolo",
+        "button": "Crea bolo",
+        "name": "Titolo",
+        "description": "Descrizione",
+        "type": "Tipo di bolo",
+        "players": "Cittadini",
+        "vehicles": "Veicoli",
+        "ended": "Terminato",
+        "types": {
+            "people": "Persone (Nome)",
+            "vehicles": "Veicoli (Targa)"
+        },
+        "bolo": {
+            "title": "BOLO #{{id}}",
+            "subtitle": "Questo bolo è stato creato il {{date}}"
+        },
+        "tooltip": {
+            "description": "Puoi modificare il BOLO",
+            "end": "Puoi terminare questo BOLO"
+        },
+        "modal": {
+            "delete": {
+                "title": "Elimina",
+                "message": "Vuoi eliminare questo bolo?"
+            },
+            "end": {
+                "title": "Termina BOLO",
+                "message": "Vuoi terminare questo bolo?"
+            }
+        },
+        "notification": {
+            "error": {
+                "title": "Errore",
+                "message": "Qualcosa è andato storto nella creazione del bolo, riprova!"
+            },
+            "update": {
+                "title": "BOLO aggiornato",
+                "message": "Hai aggiornato con successo il bolo #{{id}}"
+            },
+            "delete": {
+                "title": "BOLO eliminato",
+                "message": "Hai eliminato con successo il bolo #{{id}}"
+            },
+            "success": {
+                "title": "BOLO creato",
+                "message": "Il bolo #{{id}} è stato creato con successo"
+            },
+            "end": {
+                "title": "BOLO terminato",
+                "message": "Hai terminato con successo il bolo #{{id}}"
+            }
+        }
+    },
+    "announcements": {
+        "title": "Annunci",
+        "subtitle": "Visualizza tutti gli annunci pubblicati dai capi",
+        "list": "Lista",
+        "form": "Modulo",
+        "search": "Cerca annunci",
+        "pinned": "Questo annuncio è stato fissato",
+        "created": "Annuncio creato",
+        "create": "Crea annuncio",
+        "name": "Titolo",
+        "button": "Crea annuncio",
+        "modal": {
+            "delete": {
+                "title": "Elimina",
+                "message": "Vuoi eliminare questo annuncio?"
+            }
+        },
+        "announcement": {
+            "title": "Annuncio #{{id}}",
+            "subtitle": "Questo annuncio è stato creato il {{date}}",
+            "edit": "Modifica",
+            "save": "Salva modifiche"
+        },
+        "notification": {
+            "error": {
+                "title": "Errore",
+                "message": "Si è verificato un problema durante la creazione dell'annuncio, riprova!"
+            },
+            "update": {
+                "title": "Annuncio aggiornato",
+                "message": "Hai modificato con successo l'annuncio con id {{id}}"
+            },
+            "delete": {
+                "title": "Annuncio eliminato",
+                "message": "Hai eliminato con successo l'annuncio #{{id}}"
+            },
+            "success": {
+                "title": "Annuncio creato",
+                "message": "L'annuncio #{{id}} è stato creato"
+            }
+        }
+    },
+    "configuration": {
+        "title": "Configurazione",
+        "subtitle": "Personalizza l'MDT secondo i tuoi gusti",
+        "colors": "Colori",
+        "main_color": "Colore principale",
+        "secondary_color": "Colore secondario",
+        "third_color": "Colore terziario",
+        "highlight_color": "Colore di evidenza",
+        "contrast_color": "Colore di contrasto",
+        "text_color": "Colore del testo",
+        "language": "Lingua",
+        "reset": "Ripristina impostazioni",
+        "placeholder": "🌎 Lingua",
+        "tooltip": {
+            "language": "La lingua del MDT sarà cambiata solo per te!"
+        }
+    },
+    "chat": {
+        "placeholder": "Invia un messaggio..."
+    },
+    "errors": {
+        "no-permission": "Non sei autorizzato a farlo",
+        "incidents": {
+            "name": {
+                "length": "Il nome deve essere lungo almeno 3 caratteri",
+                "required": "Devi inserire un nome"
+            },
+            "description": {
+                "length": "La descrizione deve essere più lunga di 10 caratteri",
+                "required": "Devi inserire una descrizione"
+            },
+            "players": {
+                "length": "Devi selezionare almeno un cittadino",
+                "required": "Devi selezionare un cittadino coinvolto"
+            },
+            "cops": {
+                "length": "Devi selezionare almeno un agente",
+                "required": "Devi selezionare almeno un agente coinvolto"
+            }
+        },
+        "evidences": {
+            "name": {
+                "length": "Il nome deve essere lungo almeno 3 caratteri",
+                "required": "Devi inserire un nome"
+            },
+            "description": {
+                "length": "La descrizione deve essere più lunga di 10 caratteri",
+                "required": "Devi inserire una descrizione"
+            },
+            "images": {
+                "length": "Devi aggiungere almeno un'immagine",
+                "max": "Puoi aggiungere un massimo di 9 immagini"
+            }
+        },
+        "bolos": {
+            "title": {
+                "length": "Il titolo deve essere più lungo di 3 caratteri",
+                "required": "Devi fornire un titolo"
+            },
+            "description": {
+                "length": "La descrizione deve essere più lunga di 10 caratteri",
+                "required": "Devi fornire una descrizione"
+            },
+            "bolo_type": {
+                "required": "Devi selezionare un tipo di bolo"
+            }
+        },
+        "warrants": {
+            "reason": {
+                "length": "La ragione deve essere lunga almeno 5 caratteri",
+                "required": "Devi inserire una ragione"
+            },
+            "description": {
+                "length": "La descrizione deve essere più lunga di 10 caratteri",
+                "required": "Devi inserire una descrizione"
+            },
+            "wtype": {
+                "required": "Devi scegliere un tipo di mandato"
+            }
+        },
+        "alert": {
+            "title": {
+                "required": "La chiamata deve avere un titolo"
+            },
+            "description": {
+                "required": "Devi specificare la natura della chiamata"
+            }
+        },
+        "charges": {
+            "name": {
+                "required": "Devi inserire un nome"
+            }
+        },
+        "codes": {
+            "name": {
+                "required": "Devi inserire un nome"
+            },
+            "code": {
+                "required": "Devi inserire un codice",
+                "format": "Il formato del codice non è corretto"
+            }
+        },
+        "fines": {
+            "name": {
+                "required": "Devi inserire un nome"
+            },
+            "code": {
+                "required": "Devi inserire un codice",
+                "format": "Il formato del codice non è corretto"
+            },
+            "amount": {
+                "required": "Devi specificare una quantità"
+            }
+        }
+    },
+    "list": {
+        "not_found": "Nessuna corrispondenza"
+    },
+    "modal": {
+        "confirm": "Conferma",
+        "close": "Chiudi"
+    },
+    "common": {
+        "tooltip": {
+            "save": "Clicca sull'icona salva per salvare i valori",
+            "visit": "Clicca qui per visualizzare i dettagli del proprietario",
+            "waypoint": "Clicca qui per impostare una rotta verso la proprietà",
+            "image": "Clicca il tasto sinistro del mouse per modificare l'immagine | Clicca il tasto destro per zoommare sull'immagine",
+            "clear": "Fare clic qui per cancellare i valori"
+        },
+        "modal": {
+            "clear_title": "Cancella il modulo",
+            "clear_message": "Sei sicuro di voler cancellare i valori del modulo?"
+        }
+    },
+    "words": {
+        "error": "Errore",
+        "search": "Cerca",
+        "name": "Nome",
+        "description": "Descrizione",
+        "amount": "Auantità",
+        "months": "Mesi",
+        "street": "Strada",
+        "warrants": "Mandati",
+        "information": "Informazione",
+        "firstname": "Nome",
+        "lastname": "Cognome",
+        "gender": "Sesso",
+        "birth": "Data di nascita",
+        "phone": "Numero di telefono",
+        "job": "Lavoro",
+        "height": "Statura",
+        "notes": "Note",
+        "yes": "Sì",
+        "no": "No",
+        "house": "Abitazioni",
+        "online": "Online",
+        "offline": "Offline",
+        "exit": "Esci"
+    },
+    "pages": {
+        "dashboard": "Pannello di controllo",
+        "incidents": "Rapporti",
+        "evidences": "Prove",
+        "warrants": "Mandati",
+        "officers": "Agenti",
+        "alerts": "Chiamate",
+        "citizens": "Cittadini",
+        "vehicles": "Veicoli",
+        "houses": "Abitazioni",
+        "fines": "Multe",
+        "codes": "Codici",
+        "charges": "Accuse",
+        "announcements": "Annunci",
+        "bolos": "Bolos",
+        "config": "Configurazione"
+    }
+}

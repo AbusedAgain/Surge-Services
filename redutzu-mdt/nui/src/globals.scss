@@ -1,0 +1,54 @@
+@import './colors.module.scss';
+
+// Grids
+
+.full-list-container {
+	margin-block: 1.5vh;
+	margin-inline: 1vw;
+    height: 65vh;
+    .list {
+        height: 100%;
+    }
+}
+
+.half-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 1vw;
+}
+
+// Notification System
+
+.mantine-Notification-root {
+    background-color: rgba(var(--secondary), 1);
+    border: 1px solid rgba(var(--third), 1);
+    border-radius: 5px;
+    color: white;
+    user-select: none;
+    font-family: 'Montserrat', sans-serif;
+    &#error {
+        &::before {
+            background-color: rgba(var(--red), 1);
+        }
+    }
+    &::before {
+        background-color: rgba(var(--contrast), 1);
+    }
+}
+
+.mantine-Notification-title {
+    color: rgba(var(--text), 1);
+    font-weight: 700;
+}
+
+.mantine-Notification-description {
+    color: rgba(var(--text), .7);
+    font-weight: 500;
+}
+
+.mantine-Notification-closeButton {
+    transition: background-color .2s ease;
+    &:hover {
+        background-color: rgba(var(--highlight), 1);
+    }
+}

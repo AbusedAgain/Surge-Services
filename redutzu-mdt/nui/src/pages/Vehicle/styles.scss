@@ -1,0 +1,81 @@
+@import '../../globals.scss';
+
+.vehicle {
+    margin-block: 3vh;
+    display: grid;
+    grid-template-columns: .5fr 1fr;
+    gap: 1rem;
+    box-sizing: border-box;
+    .vehicle-header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-family: 'Montserrat', sans-serif;
+        img {
+            width: 25vh;
+            height: 15vh;
+            margin-bottom: 1rem;
+            border: 2px solid rgba(var(--third), 1);
+            background-color: rgba(var(--secondary), 1);
+            cursor: pointer;
+            object-fit: cover;
+            transition: transform .5s ease-in-out;
+            &.preview {
+                transform: scale(1.5);
+            }
+        }
+        h1 {
+            text-align: center;
+            font-size: 2.5vh;
+            font-weight: 700;
+            color: rgba(var(--text), 1);
+            max-width: 20vw;
+            word-break: break-all;
+        }
+    }
+    .information {
+        margin-right: 2vw;
+        .title {
+            display: flex;
+            align-items: center;
+            h1 {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 1.5vh;
+                font-weight: 700;
+                margin-bottom: .5rem;
+                color: rgba(var(--text), 1);
+            }
+            i {
+                cursor: pointer;
+                font-size: 1.1vh;
+                color: rgba(var(--text), 1);
+                margin-left: .5rem;
+                margin-bottom: .5rem;
+            }
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            gap: .25rem;
+            p {
+                display: flex;
+                gap: .25rem;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 1.2vh;
+                font-weight: 400;
+                color: rgba(var(--text), .7);
+            }
+            .input-form {
+                margin-top: .25rem;
+            }
+        }
+    }
+    .body {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(20vw, 1fr));
+        margin: 2rem;
+        grid-column: 2 span;
+        gap: 1rem;
+    }
+}

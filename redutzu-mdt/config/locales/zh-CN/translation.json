@@ -1,0 +1,646 @@
+{
+    "dashboard": {
+        "title": "欢迎回来, {{name}}",
+        "subtitle": "{{grade}} | {{label}}",
+        "alerts": "警报",
+        "citizens": "市民",
+        "vehicles": "注册车辆",
+        "warrants": "有效授权",
+        "officers": "值班人员"
+    },
+    "alerts": {
+        "title": "警报",
+        "subtitle": "查看实时警方警报",
+        "form": "发送警报",
+        "button": "发送警报",
+        "name": "警报标题",
+        "description": "描述",
+        "notification": {
+            "take": {
+                "title": "警报",
+                "message": "你想接受这个警报吗?"
+            },
+            "sent": {
+                "title": "警报已发送",
+                "message": "你向其他警察发送了警报!"
+            },
+            "opened": {
+                "title": "新警报",
+                "message": "你有一个新警报！ 转到警报列表以查看它."
+            },
+            "closed": {
+                "title": "新警报",
+                "message": "你有一个新警报！ 打开 MDT 并转到警报列表以查看它."
+            }
+        }
+    },
+    "incidents": {
+        "title": "案件",
+        "subtitle": "搜索案件",
+        "form": "搜索案件",
+        "create": "创建事件",
+        "button": "创建事件",
+        "name": "名称",
+        "description": "描述",
+        "players": "涉案人员",
+        "cops": "办案警察",
+        "vehicles": "涉案车辆",
+        "evidences": "证据",
+        "fines": "罚款",
+        "fine_reduction": "减刑({{amount}}$)",
+        "fine_full": "罚款 ({{amount}}$) {{reduction}}",
+        "jail": "监禁",
+        "jail_reduction": "减刑 ({{amount}} 个月)",
+        "jail_full": "判处（{{amount}} 个月）{{reduction}}",
+        "reducted": "减刑",
+        "incident": {
+            "title": "案件 #{{id}}",
+            "subtitle": "此案件已创建 {{date}}"
+        },
+        "tooltip": {
+            "description": "你可以编辑说明"
+        },
+        "modal": {
+            "delete": {
+                "title": "删除",
+                "message": "你想删除这个案件吗?"
+            }
+        },
+        "notification": {
+            "error": {
+                "title": "错误",
+                "message": "创建案件时出错，请重试!"
+            },
+            "update": {
+                "title": "案件已更新",
+                "message": "你已成功更改事件描述 #{{id}}"
+            },
+            "delete": {
+                "title": "案件已删除",
+                "message": "你已成功删除案件 #{{id}}"
+            },
+            "success": {
+                "title": "案件已创建",
+                "message": "案件 #{{id}} 已经创建了"
+            }
+        }
+    },
+    "evidences": {
+        "title": "证据",
+        "subtitle": "寻找证据",
+        "form": "搜索证据",
+        "create": "创建一个证据",
+        "button": "创建证据",
+        "name": "名称",
+        "description": "描述",
+        "players": "涉案人员",
+        "images": "图片",
+        "evidence": {
+            "title": "证据 #{{id}}",
+            "subtitle": "这个证据被创建 {{date}}"
+        },
+        "modal": {
+            "delete": {
+                "title": "删除",
+                "message": "你想删除这个证据吗?"
+            }
+        },
+        "notification": {
+            "error": {
+                "title": "错误",
+                "message": "创建证据时出了点问题，请重试!"
+            },
+            "update": {
+                "title": "证据已更新",
+                "message": "你已成功更改ID为{{id}}的证据信息"
+            },
+            "delete": {
+                "title": "证据已删除",
+                "message": "你已成功删除证据 #{{id}}"
+            },
+            "success": {
+                "title": "已创建的证据",
+                "message": "证据 #{{id}} 已经被创建了"
+            }
+        }
+    },
+    "citizens": {
+        "title": "市民",
+        "subtitle": "寻找市民",
+        "form": "搜索市民",
+        "wanted": "通缉",
+        "incidents": "案件",
+        "evidences": "证据",
+        "warrants": "授权",
+        "vehicles": "车辆",
+        "properties": "特征",
+        "bolos": "波洛斯",
+        "licenses": "执照",
+        "licenses_list": {
+            "dmv": "駕駛許可",
+            "drive": "駕駛執照",
+            "drive_bike": "摩托車牌照",
+            "drive_truck": "貨車駕駛證",
+            "weed_processing": "毒品許可證"
+        },
+        "citizen": {
+            "title": "市民",
+            "subtitle": "查看有关此市民的所有信息"
+        },
+        "modal": {
+            "license_remove": {
+                "title": "吊销执照",
+                "message": "你想吊销这个执照吗?"
+            }
+        },
+        "notification": {
+            "update": {
+                "title": "市民信息更新",
+                "message": "你已成功更改市民信息"
+            },
+            "take": {
+                "title": "吊销执照",
+                "message": "你已吊销该公民的驾照"
+            }
+        }
+    },
+    "charges": {
+        "title": "监禁",
+        "subtitle": "搜索或创建监禁",
+        "form": "搜索监禁",
+        "create": "创建监禁",
+        "button": "创建监禁",
+        "name": "名称",
+        "time": "时间（{{time}} 个月）",
+        "charge": {
+            "title": "监禁 #{{id}}",
+            "subtitle": "此监禁已创建 {{date}}"
+        },
+        "modal": {
+            "delete": {
+                "title": "删除",
+                "message": "你要删除这次监禁吗?"
+            }
+        },
+        "notification": {
+            "error": {
+                "title": "错误",
+                "message": "创建监禁时出错，请重试!"
+            },
+            "update": {
+                "title": "监禁已更新",
+                "message": "你已成功更改ID为{{id}}的监禁"
+            },
+            "delete": {
+                "title": "监禁已删除",
+                "message": "你已成功删除监禁 #{{id}}"
+            },
+            "success": {
+                "title": "监禁已创建",
+                "message": "监禁 #{{id}} 已经被创建了"
+            }
+        }
+    },
+    "codes": {
+        "title": "律法",
+        "subtitle": "搜索或创建律法",
+        "form": "搜索律法",
+        "create": "创建律法",
+        "button": "创建律法",
+        "name": "名字",
+        "format": "律法 ({{format}})",
+        "code": {
+            "title": "律法 ({{code}})",
+            "subtitle": "此律法已创建 {{date}}"
+        },
+        "modal": {
+            "delete": {
+                "title": "删除",
+                "message": "你想删除这个律法吗?"
+            }
+        },
+        "notification": {
+            "error": {
+                "title": "错误",
+                "message": "创建律法时出错，请重试!"
+            },
+            "update": {
+                "title": "律法已更新",
+                "message": "你已成功更改ID为{{id}}的律法"
+            },
+            "delete": {
+                "title": "律法已删除",
+                "message": "你已成功删除律法 #{{id}}"
+            },
+            "success": {
+                "title": "律法创建",
+                "message": "律法 #{{id}} 已创建"
+            }
+        }
+    },
+    "fines": {
+        "title": "罚款",
+        "subtitle": "搜索或创建罚款",
+        "form": "搜索罚款",
+        "create": "创建罚款",
+        "button": "创建罚款",
+        "name": "名称",
+        "code": "律法 ({{format}})",
+        "amount": "数量",
+        "fine": {
+            "title": "罚款 #{{id}}",
+            "subtitle": "这个罚款是创建的 {{date}}"
+        },
+        "modal": {
+            "delete": {
+                "title": "删除",
+                "message": "你想删除这个罚款吗?"
+            }
+        },
+        "notification": {
+            "error": {
+                "title": "错误",
+                "message": "创建罚款时出了点问题，请重试!"
+            },
+            "update": {
+                "title": "罚款更新",
+                "message": "你已成功更改罚款id {{id}}"
+            },
+            "delete": {
+                "title": "删除罚款",
+                "message": "你已成功删除罚款#{{id}}"
+            },
+            "success": {
+                "title": "创建罚款",
+                "message": "罚款 #{{id}} 已经被创建了"
+            }
+        }
+    },
+    "houses": {
+        "title": "房屋",
+        "subtitle": "按 ID 或地址搜索房屋",
+        "form": "搜索房屋",
+        "owned": "房主",
+        "house": {
+            "title": "房屋 #{{id}}",
+            "subtitle": "此房屋位于 {{address}}",
+            "placeholder": "查看有关此房屋的所有信息"
+        },
+        "notification": {
+            "location": {
+                "title": "设置定位",
+                "message": "已为此房屋设置定位"
+            }
+        }
+    },
+    "vehicles": {
+        "title": "车辆",
+        "subtitle": "按注册号搜索车辆",
+        "form": "搜索车辆",
+        "owned": "车主",
+        "plate": "车牌",
+        "incidents": "案件",
+        "bolos": "波洛斯",
+        "wanted": "通缉",
+        "vehicle": {
+            "title": "车辆",
+            "subtitle": "查看有关此车辆的所有信息"
+        },
+        "notification": {
+            "update": {
+                "title": "车辆信息已更新",
+                "message": "你已成功更改车辆信息"
+            }
+        }
+    },
+    "warrants": {
+        "title": "授权",
+        "subtitle": "按市民或地址搜索授权",
+        "form": "搜查令",
+        "create": "创建授权",
+        "button": "创建授权",
+        "reason": "原因",
+        "description": "描述",
+        "type": "授权种类",
+        "players": "涉案人员",
+        "house": "房屋",
+        "done": "完成",
+        "screenshot": "截图",
+        "tabs": {
+            "link": "链接",
+            "screenshot": "截屏"
+        },
+        "types": {
+            "arrest": "逮捕",
+            "search": "搜查"
+        },
+        "warrant": {
+            "title": "授权 #{{id}}",
+            "subtitle": "授权已成立{{date}}"
+        },
+        "modal": {
+            "delete": {
+                "title": "删除",
+                "message": "你想删除这个授权吗?"
+            }
+        },
+        "notification": {
+            "error": {
+                "title": "错误",
+                "message": "创建授权时出错，请重试!"
+            },
+            "update": {
+                "title": "授权已更新",
+                "message": "你已成功更改ID {{id}}为的权证"
+            },
+            "delete": {
+                "title": "授权已删除",
+                "message": "你已经成功删除了授权 #{{id}}"
+            },
+            "success": {
+                "title": "授权已创建",
+                "message": "授权 #{{id}} 已经被创建了"
+            }
+        }
+    },
+    "officers": {
+        "title": "值班人员",
+        "subtitle": "查看所有人员"
+    },
+    "bolos": {
+        "title": "Bolos",
+        "subtitle": "通过名称、车牌或标题搜索bolos",
+        "form": "搜索bolos",
+        "create": "创建一个bolo",
+        "button": "创建bolo",
+        "name": "标题",
+        "description": "描述",
+        "type": "Bolo类型",
+        "players": "市民",
+        "vehicles": "车辆",
+        "ended": "已结束",
+        "types": {
+            "people": "人员（名称）",
+            "vehicles": "车辆（车牌）"
+        },
+        "bolo": {
+            "title": "BOLO #{{id}}",
+            "subtitle": "此bolo创建于{{date}}"
+        },
+        "tooltip": {
+            "description": "您可以编辑此BOLO",
+            "end": "您可以结束此BOLO"
+        },
+        "modal": {
+            "delete": {
+                "title": "删除",
+                "message": "您确定要删除此bolo吗？"
+            },
+            "end": {
+                "title": "结束BOLO",
+                "message": "您确定要结束此bolo吗？"
+            }
+        },
+        "notification": {
+            "error": {
+                "title": "错误",
+                "message": "创建bolo时出现问题，请重试！"
+            },
+            "update": {
+                "title": "BOLO已更新",
+                "message": "您已成功更新bolo #{{id}}"
+            },
+            "delete": {
+                "title": "BOLO已删除",
+                "message": "您已成功删除bolo #{{id}}"
+            },
+            "success": {
+                "title": "BOLO已创建",
+                "message": "bolo #{{id}}已创建成功"
+            },
+            "end": {
+                "title": "BOLO已结束",
+                "message": "您已成功结束bolo #{{id}}"
+            }
+        }
+    },
+    "announcements": {
+        "title": "公告",
+        "subtitle": "查看由管理人员发布的所有公告",
+        "list": "列表",
+        "form": "表单",
+        "search": "搜索公告",
+        "pinned": "此公告已固定",
+        "created": "已创建公告",
+        "create": "创建公告",
+        "name": "标题",
+        "button": "创建公告",
+        "modal": {
+            "delete": {
+                "title": "删除",
+                "message": "是否要删除此公告？"
+            }
+        },
+        "announcement": {
+            "title": "公告 #{{id}}",
+            "subtitle": "此公告已于{{date}}创建",
+            "edit": "编辑",
+            "save": "保存更改"
+        },
+        "notification": {
+            "error": {
+                "title": "错误",
+                "message": "创建公告时出现错误，请重试！"
+            },
+            "update": {
+                "title": "公告已更新",
+                "message": "您已成功更改了id为{{id}}的公告"
+            },
+            "delete": {
+                "title": "公告已删除",
+                "message": "您已成功删除了公告 #{{id}}"
+            },
+            "success": {
+                "title": "公告已创建",
+                "message": "公告 #{{id}}已创建"
+            }
+        }
+    },
+    "configuration": {
+        "title": "配置",
+        "subtitle": "根据你的喜好自定义 MDT",
+        "colors": "颜色",
+        "main_color": "主色",
+        "secondary_color": "副色",
+        "third_color": "次色",
+        "highlight_color": "高亮颜色",
+        "contrast_color": "对比度颜色",
+        "text_color": "文字颜色",
+        "language": "语言",
+        "reset": "重新设置",
+        "placeholder": "🌎 语言",
+        "tooltip": {
+            "language": "此选项不会更改所有用户的语言!"
+        }
+    },
+    "chat": {
+        "placeholder": "输入消息.."
+    },
+    "errors": {
+        "no-permission": "你没有权限执行此操作",
+        "incidents": {
+            "name": {
+                "length": "名称必须超过 3 个字符",
+                "required": "你必须提供一个名字"
+            },
+            "description": {
+                "length": "描述必须超过 10 个字符",
+                "required": "你必须提供说明"
+            },
+            "players": {
+                "length": "你必须选择至少 1 位公民",
+                "required": "你必须选择一个涉案人员"
+            },
+            "cops": {
+                "length": "你必须至少选择一名警察",
+                "required": "你必须选择一名办案警察"
+            }
+        },
+        "evidences": {
+            "name": {
+                "length": "名称必须超过 3 个字符",
+                "required": "你必须提供一个名字"
+            },
+            "description": {
+                "length": "描述必须超过 10 个字符",
+                "required": "你必须提供说明"
+            },
+            "images": {
+                "length": "你必须添加至少 1 张图片",
+                "max": "你只能添加 9 张图片"
+            }
+        },
+        "bolos": {
+            "title": {
+                "length": "标题长度必须超过3个字符",
+                "required": "您必须提供一个标题"
+            },
+            "description": {
+                "length": "描述长度必须超过10个字符",
+                "required": "您必须提供一个描述"
+            },
+            "bolo_type": {
+                "required": "您必须选择一个bolo类型"
+            }
+        },
+        "warrants": {
+            "reason": {
+                "length": "原因必须超过 5 个字符",
+                "required": "你必须提供一个理由"
+            },
+            "description": {
+                "length": "描述必须超过 10 个字符",
+                "required": "你必须提供说明"
+            },
+            "wtype": {
+                "required": "你必须选择授权类型"
+            }
+        },
+        "alert": {
+            "title": {
+                "required": "警报必须有标题"
+            },
+            "description": {
+                "required": "你必须在警报的描述中写一些东西"
+            }
+        },
+        "charges": {
+            "name": {
+                "required": "你必须提供一个名字"
+            }
+        },
+        "codes": {
+            "name": {
+                "required": "你必须提供一个名字"
+            },
+            "code": {
+                "required": "你必须提供律法",
+                "format": "律法格式错误"
+            }
+        },
+        "fines": {
+            "name": {
+                "required": "你必须提供一个名字"
+            },
+            "code": {
+                "required": "你必须提供一个律法",
+                "format": "律法格式错误"
+            },
+            "amount": {
+                "required": "你必须设置一个数量"
+            }
+        }
+    },
+    "list": {
+        "not_found": "未找到结果"
+    },
+    "modal": {
+        "confirm": "确认",
+        "close": "关闭"
+    },
+    "common": {
+        "tooltip": {
+            "save": "单击保存图标以保存值",
+            "visit": "单击此处访问所有者的个人资料",
+            "waypoint": "单击此处为该属性设置航点",
+            "image": "左键点击编辑图片 | 右击放大图片",
+            "clear": "单击此处清除所有值"
+        },
+        "modal": {
+            "clear_title": "清除表单",
+            "clear_message": "您确定要清除表单值吗？"
+        }
+    },
+    "words": {
+        "error": "错误",
+        "search": "搜索",
+        "name": "姓名",
+        "description": "描述",
+        "amount": "数量",
+        "months": "监禁月份",
+        "street": "街道",
+        "warrants": "授权",
+        "information": "信息",
+        "firstname": "姓",
+        "lastname": "名",
+        "gender": "性别",
+        "birth": "出生日期",
+        "phone": "电话号码",
+        "job": "职业",
+        "height": "高度",
+        "notes": "记录",
+        "yes": "是",
+        "no": "否",
+        "house": "房屋",
+        "online": "上班",
+        "offline": "下班",
+        "exit": "退出"
+    },
+    "pages": {
+        "dashboard": "终端",
+        "incidents": "案件",
+        "evidences": "证据",
+        "warrants": "授权",
+        "officers": "值班人员",
+        "alerts": "警报",
+        "citizens": "市民",
+        "vehicles": "车辆",
+        "houses": "房屋",
+        "fines": "罚款",
+        "codes": "律法",
+        "charges": "金额",
+        "announcements": "公告",
+        "bolos": "波洛斯",
+        "config": "配置"
+    }
+}

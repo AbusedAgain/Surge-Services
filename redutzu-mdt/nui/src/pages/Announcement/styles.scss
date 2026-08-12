@@ -1,0 +1,71 @@
+@import '../../globals.scss';
+
+.announcement-content {
+    .announcement-information {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 1.5rem;
+        margin-inline: 2vw;
+        padding-inline: .5vw;
+        padding-bottom: 1vh;
+        border-bottom: 1px solid rgba(var(--highlight), 1);
+        .data {
+            display: flex;
+            flex-direction: column;
+            gap: .3rem;
+            p {
+                display: flex;
+                gap: .25rem;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 1.2vh;
+                font-weight: 600;
+                align-items: center;
+                color: rgba(var(--text), .7);
+                i {
+                    cursor: pointer;
+                }
+                b {
+                    color: rgba(var(--contrast), 1);
+                }
+            }
+        }
+        .settings {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            button {
+                padding-inline: .5vw;
+                background-color: rgba(var(--contrast), .05);
+                border-color: transparent;
+                transition: background-color .2s ease-in-out;
+                &:hover {
+                    background-color: rgba(var(--contrast), .1);
+                }
+            }
+        }
+    }
+    .text-editor {
+        margin-block: 1.5rem;
+        margin-inline: 2vw;
+    }
+    .mantine-TypographyStylesProvider-root {
+        margin-inline: 1.5vw;
+        font-family: 'Montserrat', sans-serif;
+        color: rgba(var(--text), 1);
+        blockquote {
+            border-left-color: rgba(var(--text), .5);
+        }
+        .ql-syntax {
+            background-color: rgba(var(--third), 1);
+            border-color: rgba(var(--main), .5);
+            color: rgba(var(--text), .75);
+        }
+        div {    
+            overflow: auto;
+            max-height: 65vh;
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,51 @@
+@import '../../../globals.scss';
+
+.image-container {
+	position: relative;
+	height: 10rem;
+	overflow: hidden;
+	border-radius: 5px;
+	border: 1px solid rgba(var(--third), 1);
+	cursor: pointer;
+	transition: transform .5s ease-in-out;
+	z-index: 1;
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		background-color: rgba(var(--secondary), 1);
+	}
+	&.preview {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		width: 60%;
+		height: 60%;
+		z-index: 2;
+	}
+	&::after {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		content: 'Click to zoom';
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 900;
+		font-size: 1.7vh;
+		font-style: italic;
+		text-transform: uppercase;
+		-webkit-text-stroke: 1px rgba(var(--contrast), 1);
+		color: white;
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(var(--main), .75);
+		transition: opacity .5s ease-in-out;
+		opacity: 0;
+	}
+	&:hover:not(.preview)::after {
+		opacity: 1;
+	}
+}

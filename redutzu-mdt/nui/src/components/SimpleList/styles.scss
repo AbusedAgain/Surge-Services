@@ -1,0 +1,73 @@
+@import '../../globals.scss';
+
+.simple-list {
+	.header {
+		display: flex;
+		gap: .5rem;
+		h1 {
+			font-family: 'Montserrat', sans-serif;
+			font-weight: 600;
+			font-size: 1.25vh;
+			color: rgba(var(--text), .7);
+		}
+		i {
+            color: rgba(var(--text), 1);
+			cursor: pointer;
+        }
+	}
+	.results {
+		display: grid;
+		grid-auto-rows: 2.5rem;
+		padding-block: .5rem;
+		gap: .35rem;
+		max-height: 15rem;
+		overflow-x: hidden;
+		overflow-y: scroll;
+		scroll-behavior: smooth;
+		scrollbar-width: none;
+		&::-webkit-scrollbar {
+			display: none;
+		}
+		.result {
+			position: relative;
+			cursor: pointer;
+			box-sizing: border-box;
+			width: 100%;
+			background-color: rgba(var(--secondary), 1);
+			border: 1px solid rgba(var(--third), 1);
+			border-radius: 5px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding-inline: 1rem;
+			color: rgba(var(--text), .5);
+			font-family: 'Montserrat', sans-serif;
+			font-weight: 500;
+			.icon {
+				display: flex;
+				align-items: center;
+				gap: .7rem;
+				i {
+					font-size: 1.1rem;
+				}
+				h1 {
+					font-size: 1rem;
+					font-weight: 600;
+					text-overflow: ellipsis;
+					overflow: hidden;
+					white-space: nowrap;
+					max-width: 210px;
+				}
+			}
+			p {
+				font-size: .8rem;
+			}
+			&.remove {
+				transition: background-color .3s ease-in-out;
+				&:hover {
+					background-color: rgba(var(--third), 1);
+				}
+			}
+		}
+	}
+}

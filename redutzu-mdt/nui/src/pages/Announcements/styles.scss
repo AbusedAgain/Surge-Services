@@ -1,0 +1,21 @@
+@import '../../globals.scss';
+
+.tabs {
+    margin-block: 1vh;
+    margin-inline: 1.5vw;
+    .mantine-Tabs-tabsList {
+        margin-bottom: 1rem;
+        border-color: rgba(var(--third), 1);
+        button {
+            color: rgba(var(--text), 1);
+            font-family: 'Montserrat', sans-serif !important;
+            &:hover {
+                background-color: rgba(var(--secondary), 1);
+                border-color: rgba(var(--third), 1);
+            }
+            &[aria-selected="true"] {
+                border-color: rgba(var(--contrast), 1);
+            }
+        }
+    }
+}

@@ -1,0 +1,646 @@
+{
+    "dashboard": {
+        "title": "Witaj ponownie, {{name}}",
+        "subtitle": "{{grade}} | {{label}}",
+        "alerts": "Zgłoszenia",
+        "citizens": "Obywatele",
+        "vehicles": "Zarejestrowane Pojazdy",
+        "warrants": "Poszukiwania",
+        "officers": "Funkcjonariusze na służbie"
+    },
+    "alerts": {
+        "title": "Zgłoszenia",
+        "subtitle": "Zobacz alerty policyjne w czasie rzeczywistym",
+        "form": "Wyślij zgłoszenie",
+        "button": "Wyślij",
+        "name": "Tytuł Zgłoszenia",
+        "description": "Opis",
+        "notification": {
+            "take": {
+                "title": "Zgłoszenie",
+                "message": "Chcesz zareagować na to zgłoszenie?"
+            },
+            "sent": {
+                "title": "Wysłano Zgłoszenie",
+                "message": "Wysłano zgłoszenie do innych funkcjonariuszy"
+            },
+            "opened": {
+                "title": "Nowe Zgłoszenie",
+                "message": "Masz nowe zgłoszenie! Przejdź do zakładki zgłoszenia, aby je wyświetlić."
+            },
+            "closed": {
+                "title": "Nowe Zgłoszenie",
+                "message": "Masz nowe zgłoszenie! Otwórz tablet i przejdź do zakładki zgłoszenia, aby je wyświetlić."
+            }
+        }
+    },
+    "incidents": {
+        "title": "Zarzuty",
+        "subtitle": "Wyszukaj zarzuty",
+        "form": "Szukaj zarzutów",
+        "create": "Stwórz zarzuty",
+        "button": "Stwórz",
+        "name": "Nazwa",
+        "description": "Opis",
+        "players": "Zaangażowani obywatele",
+        "cops": "Zaangażowani funkcjonariusze",
+        "vehicles": "Uczestniczące pojazdy",
+        "evidences": "Dowody",
+        "fines": "Grzywna",
+        "fine_reduction": "Redukcja grzywny ({{amount}}$)",
+        "fine_full": "Grzywna ({{amount}}$) {{reduction}}",
+        "jail": "Zarzuty",
+        "jail_reduction": "Redukcja więzienia ({{amount}} months)",
+        "jail_full": "Zarzuty ({{amount}} months) {{reduction}}",
+        "reducted": "zredukowano",
+        "incident": {
+            "title": "Zarzut #{{id}}",
+            "subtitle": "Ten zarzut został utworzony {{date}}"
+        },
+        "tooltip": {
+            "description": "Możesz edytować opis"
+        },
+        "modal": {
+            "delete": {
+                "title": "Usuń",
+                "message": "Czy chcesz usunąć zarzut?"
+            }
+        },
+        "notification": {
+            "error": {
+                "title": "Error",
+                "message": "Coś poszło nie tak podczas tworzenia zarzutu, spróbuj ponownie!"
+            },
+            "update": {
+                "title": "Zarzut zaktualizowany",
+                "message": "Pomyślnie zmieniono opis zarzutu #{{id}}"
+            },
+            "delete": {
+                "title": "Zarzut usunięty",
+                "message": "Pomyślnie usunięto zarzut #{{id}}"
+            },
+            "success": {
+                "title": "Zarzut utworzony",
+                "message": "Zarzut #{{id}} został utworzony"
+            }
+        }
+    },
+    "evidences": {
+        "title": "Dowody",
+        "subtitle": "Wyszukaj dowody",
+        "form": "Szukaj",
+        "create": "Stwórz teczkę dowodów",
+        "button": "Stwórz",
+        "name": "Nazwa",
+        "description": "Opis",
+        "players": "Zaangażowani obywatele",
+        "images": "Zdjęcia",
+        "evidence": {
+            "title": "Dowód #{{id}}",
+            "subtitle": "Ten dowód został utworzony {{date}}"
+        },
+        "modal": {
+            "delete": {
+                "title": "Usuń",
+                "message": "Czy chcesz usunąć te dowody?"
+            }
+        },
+        "notification": {
+            "error": {
+                "title": "Error",
+                "message": "Coś poszło nie tak podczas tworzenia dowodów, spróbuj ponownie!"
+            },
+            "update": {
+                "title": "Dowody zaktualizowane",
+                "message": "Pomyślnie zmieniono dowody {{id}}"
+            },
+            "delete": {
+                "title": "Usuń dowód",
+                "message": "Pomyślnie usunięto dowody #{{id}}"
+            },
+            "success": {
+                "title": "Dowody utworzone",
+                "message": "Dowody #{{id}} zostały utworzone"
+            }
+        }
+    },
+    "citizens": {
+        "title": "Obywatele",
+        "subtitle": "Wyszukaj obywatela",
+        "form": "Szukaj obywatela",
+        "wanted": "POSZUKIWANY",
+        "incidents": "Zarzuty",
+        "evidences": "Dowody",
+        "warrants": "Nakazy",
+        "vehicles": "Pojazdy",
+        "properties": "Posiadłości",
+        "bolos": "Bolos",
+        "licenses": "Licencje",
+        "licenses_list": {
+            "dmv": "Prawo Jazdy",
+            "drive": "Prawo jazdy kat. B",
+            "drive_bike": "Prawo jazdy kat. A",
+            "drive_truck": "Prawo jazdy kat. C",
+            "weed_processing": "Weed Processing License"
+        },
+        "citizen": {
+            "title": "Obywatel",
+            "subtitle": "Wyświetl wszystkie informacje o tym obywatelu"
+        },
+        "modal": {
+            "license_remove": {
+                "title": "Zabierz licencję",
+                "message": "Czy chcesz zabrać tę licencję?"
+            }
+        },
+        "notification": {
+            "update": {
+                "title": "Zaktualizowano informacje obywatela",
+                "message": "Pomyślnie zmieniono informacje o obywatelu"
+            },
+            "take": {
+                "title": "Licencja zabrana",
+                "message": "Zabrano licencje obywatelowi"
+            }
+        }
+    },
+    "charges": {
+        "title": "Zarzuty",
+        "subtitle": "Szukaj lub stwórz zarzuty",
+        "form": "Wyszukaj zarzuty",
+        "create": "Stwórz zarzuty",
+        "button": "Stwórz zarzuty",
+        "name": "Nazwa",
+        "time": "Czas({{time}} months)",
+        "charge": {
+            "title": "Zarzut #{{id}}",
+            "subtitle": "Ten zarzut utworzono {{date}}"
+        },
+        "modal": {
+            "delete": {
+                "title": "Usuń",
+                "message": "Czy chcesz usunąć ten zarzut?"
+            }
+        },
+        "notification": {
+            "error": {
+                "title": "Error",
+                "message": "Coś poszło nie tak podczas tworzenia zarzutu, spróbuj ponownie!"
+            },
+            "update": {
+                "title": "Zarzuty zaktualizowane",
+                "message": "Pomyślnie zmieniono zarzuty {{id}}"
+            },
+            "delete": {
+                "title": "Zarzuty usunięte",
+                "message": "Pomyślnie usunięto zarzuty #{{id}}"
+            },
+            "success": {
+                "title": "Utworzono zarzuty",
+                "message": "Zarzut #{{id}} został utworzony"
+            }
+        }
+    },
+    "codes": {
+        "title": "Kody",
+        "subtitle": "Szukaj lub stwórz kod",
+        "form": "Szukaj kodu",
+        "create": "Stwórz kod",
+        "button": "Stwórz kod",
+        "name": "Nazwa",
+        "format": "Kod ({{format}})",
+        "code": {
+            "title": "Kod ({{code}})",
+            "subtitle": "Ten kod został utworzony {{date}}"
+        },
+        "modal": {
+            "delete": {
+                "title": "Usuń",
+                "message": "Czy chcesz usunąć ten kod?"
+            }
+        },
+        "notification": {
+            "error": {
+                "title": "Error",
+                "message": "Coś poszło nie tak podczas tworzenia kodu, spróbuj ponownie!"
+            },
+            "update": {
+                "title": "Kod zaktualizowany",
+                "message": "Pomyślnie zaktualizowano kod {{id}}"
+            },
+            "delete": {
+                "title": "Kod usunięty",
+                "message": "Pomyślnie usunięto kod #{{id}}"
+            },
+            "success": {
+                "title": "Kod utworzony",
+                "message": "Kod #{{id}} został utworzony"
+            }
+        }
+    },
+    "fines": {
+        "title": "Grzywny",
+        "subtitle": "Szukaj lub utwórz grzywny",
+        "form": "Szukaj grzywny",
+        "create": "Utwórz grzywnę",
+        "button": "Utwórz grzywnę",
+        "name": "Nazwa",
+        "code": "Kod ({{format}})",
+        "amount": "Ilość",
+        "fine": {
+            "title": "Grzywna #{{id}}",
+            "subtitle": "Ta grzywna została utworzona {{date}}"
+        },
+        "modal": {
+            "delete": {
+                "title": "Usuń",
+                "message": "Czy chcesz usunąć tę grzywnę?"
+            }
+        },
+        "notification": {
+            "error": {
+                "title": "Error",
+                "message": "Coś poszło nie tak podczas tworzenia grzywny, spróbuj ponownie!"
+            },
+            "update": {
+                "title": "Grzywna zaktualizowana",
+                "message": "Pomyślnie zaktualizowano grzywnę {{id}}"
+            },
+            "delete": {
+                "title": "Usunięto grzywnę",
+                "message": "Pomyślnie usunięto grzywnę #{{id}}"
+            },
+            "success": {
+                "title": "Grzywna utworzona",
+                "message": "Grzywna #{{id}} została utworzona"
+            }
+        }
+    },
+    "houses": {
+        "title": "Posiadłości",
+        "subtitle": "Wyszukaj posiadłość za pomocą identyfikatora lub adresu",
+        "form": "Wyszukaj posiadłość",
+        "owned": "Posiadane",
+        "house": {
+            "title": "Posiadłość #{{id}}",
+            "subtitle": "Ta posiadłość położona jest na {{address}}",
+            "placeholder": "Zobacz wszystkie informacje o tej posiadłości"
+        },
+        "notification": {
+            "location": {
+                "title": "Ustawiono Punkt Trasy",
+                "message": "Punkt trasy został wyznaczony do posiadłości"
+            }
+        }
+    },
+    "vehicles": {
+        "title": "Pojazdy",
+        "subtitle": "Wyszukiwanie pojazdów według numeru rejestracyjnego",
+        "form": "Szukaj pojazdów",
+        "owned": "Posiadane",
+        "plate": "Tablica rejestracyjna",
+        "incidents": "Zarzuty",
+        "bolos": "Bolos",
+        "wanted": "POSZUKIWANY",
+        "vehicle": {
+            "title": "Pojazd",
+            "subtitle": "Wyświetl wszystkie informacje o tym pojeździe"
+        },
+        "notification": {
+            "update": {
+                "title": "Zaktualizowano informacje o pojeździe",
+                "message": "Pomyślnie zmieniono informacje o pojeździe"
+            }
+        }
+    },
+    "warrants": {
+        "title": "Nakazy",
+        "subtitle": "Szukaj nakazów według obywatela lub adresu",
+        "form": "Wyszukaj nakazów",
+        "create": "Utwórz nakaz",
+        "button": "Utwórz nakaz",
+        "reason": "Powód",
+        "description": "Opis",
+        "type": "Rodzaj nakazu",
+        "players": "Zaangażowani obywatele",
+        "house": "Posiadłość",
+        "done": "Zrobione",
+        "screenshot": "Zrób zdjęcie",
+        "tabs": {
+            "link": "Link",
+            "screenshot": "Zdjęcie"
+        },
+        "types": {
+            "arrest": "Aresztania",
+            "search": "Przeszukania"
+        },
+        "warrant": {
+            "title": "Nakaz #{{id}}",
+            "subtitle": "Ten nakaz został utworzony {{date}}"
+        },
+        "modal": {
+            "delete": {
+                "title": "Usuń",
+                "message": "Czy chcesz usunąć ten nakaz?"
+            }
+        },
+        "notification": {
+            "error": {
+                "title": "Error",
+                "message": "Coś poszło nie tak podczas tworzenia nakazu, spróbuj ponownie!"
+            },
+            "update": {
+                "title": "Zaktualizowano nakaz",
+                "message": "Pomyślnie zaktualizowano nakaz {{id}}"
+            },
+            "delete": {
+                "title": "Usunięto nakaz",
+                "message": "Pomyślnie usunięto nakaz #{{id}}"
+            },
+            "success": {
+                "title": "Utworzono nakaz",
+                "message": "Nakaz #{{id}} został utworzony"
+            }
+        }
+    },
+    "officers": {
+        "title": "Funkcjonariusze",
+        "subtitle": "Zobacz wszystkich funkcjonariuszy"
+    },
+    "bolos": {
+        "title": "Bolos",
+        "subtitle": "Szukaj bolosów według nazwy, numeru rejestracyjnego lub tytułu",
+        "form": "Szukaj bolos",
+        "create": "Utwórz bolo",
+        "button": "Utwórz bolo",
+        "name": "Tytuł",
+        "description": "Opis",
+        "type": "Rodzaj bolo",
+        "players": "Obywatele",
+        "vehicles": "Pojazdy",
+        "ended": "Zakończone",
+        "types": {
+            "people": "Ludzie (Imię)",
+            "vehicles": "Pojazdy (Numer rejestracyjny)"
+        },
+        "bolo": {
+            "title": "BOLO #{{id}}",
+            "subtitle": "To bolo zostało utworzone {{date}}"
+        },
+        "tooltip": {
+            "description": "Możesz edytować BOLO",
+            "end": "Możesz zakończyć to BOLO"
+        },
+        "modal": {
+            "delete": {
+                "title": "Usuń",
+                "message": "Czy chcesz usunąć to bolo?"
+            },
+            "end": {
+                "title": "Zakończ BOLO",
+                "message": "Czy chcesz zakończyć to bolo?"
+            }
+        },
+        "notification": {
+            "error": {
+                "title": "Błąd",
+                "message": "Coś poszło nie tak podczas tworzenia bolo, spróbuj ponownie!"
+            },
+            "update": {
+                "title": "BOLO zaktualizowane",
+                "message": "Pomyślnie zaktualizowano bolo #{{id}}"
+            },
+            "delete": {
+                "title": "BOLO usunięte",
+                "message": "Pomyślnie usunięto bolo #{{id}}"
+            },
+            "success": {
+                "title": "BOLO utworzone",
+                "message": "Bolo #{{id}} zostało utworzone"
+            },
+            "end": {
+                "title": "BOLO zakończone",
+                "message": "Pomyślnie zakończono bolo #{{id}}"
+            }
+        }
+    },
+    "announcements": {
+        "title": "Ogłoszenia",
+        "subtitle": "Zobacz wszystkie ogłoszenia szefów",
+        "list": "Lista",
+        "form": "Formularz",
+        "search": "Szukaj ogłoszeń",
+        "pinned": "To ogłoszenie jest przypięte",
+        "created": "Ogłoszenie utworzone",
+        "create": "Utwórz ogłoszenie",
+        "name": "Tytuł",
+        "button": "Utwórz ogłoszenie",
+        "modal": {
+            "delete": {
+                "title": "Usuń",
+                "message": "Czy chcesz usunąć to ogłoszenie?"
+            }
+        },
+        "announcement": {
+            "title": "Ogłoszenie nr {{id}}",
+            "subtitle": "To ogłoszenie zostało utworzone {{date}}",
+            "edit": "Edytuj",
+            "save": "Zapisz zmiany"
+        },
+        "notification": {
+            "error": {
+                "title": "Błąd",
+                "message": "Coś poszło nie tak podczas tworzenia ogłoszenia, spróbuj ponownie!"
+            },
+            "update": {
+                "title": "Ogłoszenie zaktualizowane",
+                "message": "Pomyślnie zmieniłeś ogłoszenie o id {{id}}"
+            },
+            "delete": {
+                "title": "Ogłoszenie usunięte",
+                "message": "Pomyślnie usunąłeś ogłoszenie o numerze {{id}}"
+            },
+            "success": {
+                "title": "Ogłoszenie utworzone",
+                "message": "Ogłoszenie nr {{id}} zostało utworzone"
+            }
+        }
+    },
+    "configuration": {
+        "title": "Konfiguracja",
+        "subtitle": "Dostosuj MDT do swoich upodobań",
+        "colors": "Kolory",
+        "main_color": "Kolor główny",
+        "secondary_color": "Drugi kolor",
+        "third_color": "Trzeci kolor",
+        "highlight_color": "Kolor podświetlania",
+        "contrast_color": "Kolor kontrastu",
+        "text_color": "Kolor tekstu",
+        "language": "Język",
+        "reset": "Ustawienia domyślne",
+        "placeholder": "🌎 Język",
+        "tooltip": {
+            "language": "Ta opcja nie zmieni języka dla wszystkich użytkowników!"
+        }
+    },
+    "chat": {
+        "placeholder": "Napisz wiadomość..."
+    },
+    "errors": {
+        "no-permission": "Nie masz do tego uprawnień",
+        "incidents": {
+            "name": {
+                "length": "Nazwa musi składać się z 3 lub więcej znaków",
+                "required": "Musisz podać nazwę"
+            },
+            "description": {
+                "length": "Opis musi się składać z 10 lub więcej znaków",
+                "required": "Musisz uzupełnić polę Opis"
+            },
+            "players": {
+                "length": "Musisz wybrać przynajmniej jednego obywatela",
+                "required": "Musisz wybrać obywatela zaangażowanego w zdarzenie"
+            },
+            "cops": {
+                "length": "Musisz wybrać przynajmniej jednego funkcjonariusza",
+                "required": "Musisz wybrać funkcjonariusza zaagnażowanego w zdarzenie"
+            }
+        },
+        "evidences": {
+            "name": {
+                "length": "Nazwa musi składać się z 3 lub więcej znaków",
+                "required": "Musisz uzupełnić polę Nazwa"
+            },
+            "description": {
+                "length": "Opis musi się składać z 10 lub więcej znaków",
+                "required": "Musisz uzupełnić polę Opis"
+            },
+            "images": {
+                "length": "Musisz dodać przynajmniej jedno zdjęcie",
+                "max": "Możesz dodać maksymalnie 9 zdjęć"
+            }
+        },
+        "bolos": {
+            "title": {
+                "length": "Tytuł musi być dłuższy niż 3 znaki",
+                "required": "Musisz podać tytuł"
+            },
+            "description": {
+                "length": "Opis musi być dłuższy niż 10 znaków",
+                "required": "Musisz podać opis"
+            },
+            "bolo_type": {
+                "required": "Musisz wybrać rodzaj bolo"
+            }
+        },
+        "warrants": {
+            "reason": {
+                "length": "Powód musi się składać z 5 lub więcej znaków",
+                "required": "Musisz podać powód"
+            },
+            "description": {
+                "length": "Opis musi się składać z 10 lub więcej znaków",
+                "required": "Musisz uzupełnić polę Opis"
+            },
+            "wtype": {
+                "required": "Musisz wybrać typ nakazu"
+            }
+        },
+        "alert": {
+            "title": {
+                "required": "Zgłoszenie musi mieć tytuł"
+            },
+            "description": {
+                "required": "Musisz napisać coś w opisie zgłoszenia"
+            }
+        },
+        "charges": {
+            "name": {
+                "required": "Musisz podać nazwę"
+            }
+        },
+        "codes": {
+            "name": {
+                "required": "Musisz podać nazwę"
+            },
+            "code": {
+                "required": "Musisz podać kod",
+                "format": "Format kodu jest nieprawidłowy"
+            }
+        },
+        "fines": {
+            "name": {
+                "required": "Musisz podać nazwę"
+            },
+            "code": {
+                "required": "Musisz podać kod",
+                "format": "Format kodu jest nieprawidłowy"
+            },
+            "amount": {
+                "required": "Musisz ustawić ilość"
+            }
+        }
+    },
+    "list": {
+        "not_found": "Nie znaleziono wyników"
+    },
+    "modal": {
+        "confirm": "Potwierdź",
+        "close": "Zamknij"
+    },
+    "common": {
+        "tooltip": {
+            "save": "Kliknij ikonę zapisywania, aby zapisać wartości",
+            "visit": "Kliknij tutaj, aby przejść do profilu właściciela",
+            "waypoint": "Kliknij tutaj, aby ustawić punkt trasy do tej posiadłości",
+            "image": "Kliknij lewym przyciskiem myszy, aby edytować obraz | Kliknij prawym przyciskiem myszy, aby powiększyć obraz",
+            "clear": "Kliknij tutaj, aby wyczyścić pola"
+        },
+        "modal": {
+            "clear_title": "Wyczyść formularz",
+            "clear_message": "Czy na pewno chcesz wyczyścić wartości formularza?"
+        }
+    },
+    "words": {
+        "error": "Błąd",
+        "search": "Szukaj",
+        "name": "Nazwa",
+        "description": "Opis",
+        "amount": "Ilość",
+        "months": "miesiące",
+        "street": "Ulica",
+        "warrants": "Nakazy",
+        "information": "Informacje",
+        "firstname": "Imię",
+        "lastname": "Nazwisko",
+        "gender": "Płeć",
+        "birth": "Data urodzenia",
+        "phone": "Numer telefonu",
+        "job": "Praca",
+        "height": "Wzrost",
+        "notes": "Uwagi",
+        "yes": "Tak",
+        "no": "Nie",
+        "house": "Posiadłości",
+        "online": "Online",
+        "offline": "Offline",
+        "exit": "Wyjdź"
+    },
+    "pages": {
+        "dashboard": "Pulpit",
+        "incidents": "Zarzuty",
+        "evidences": "Dowody",
+        "warrants": "Nakazy",
+        "officers": "Funkcjonariusze",
+        "alerts": "Zgłoszenia",
+        "citizens": "Obywatele",
+        "vehicles": "Pojazdy",
+        "houses": "Posiadłości",
+        "fines": "Grzywny",
+        "codes": "Kody",
+        "charges": "Taryfikator",
+        "announcements": "Ogłoszenia",
+        "bolos": "Bolos",
+        "config": "Ustawienia"
+    }
+}

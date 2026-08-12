@@ -1,0 +1,646 @@
+{
+    "dashboard": {
+        "title": "Velkommen tilbage, {{name}}",
+        "subtitle": "{{grade}} | {{label}}",
+        "alerts": "Opkald",
+        "citizens": "Borgere",
+        "vehicles": "Registreret biler",
+        "warrants": "Aktive Efterlysninger",
+        "officers": "Aktiv Betjente"
+    },
+    "alerts": {
+        "title": "Opkald",
+        "subtitle": "Se real-time opkald",
+        "form": "Ind send et opkal",
+        "button": "Send opkald",
+        "name": "Opkalds titel",
+        "description": "Beskrivelse",
+        "notification": {
+            "take": {
+                "title": "Opkald",
+                "message": "Vil du tage dette opkald?"
+            },
+            "sent": {
+                "title": "Opkald sendt",
+                "message": "Du sendte opkaldet til de andre betjente!"
+            },
+            "opened": {
+                "title": "Nyt Opkald",
+                "message": "Du har modtaget et nyt opkald! Gå ind på opkalds siden for at se opkaldet."
+            },
+            "closed": {
+                "title": "Nyt opkald",
+                "message": "Du har modtaget et nyt opkald! Gå ind på opkalds siden på MDTen for at se opkaldet."
+            }
+        }
+    },
+    "incidents": {
+        "title": "Rapporter",
+        "subtitle": "Søg efter Rapporter",
+        "form": "Søg i Rapporter",
+        "create": "Opret en rapport",
+        "button": "Opret rapport",
+        "name": "Navn",
+        "description": "Beskrivelse",
+        "players": "Borgere involveret",
+        "cops": "Betjente involveret",
+        "vehicles": "Biler involveret",
+        "evidences": "Beviser",
+        "fines": "Bøder",
+        "fine_reduction": "Bøde reducering ({{amount}}DKK)",
+        "fine_full": "Bøder ({{amount}}$) {{reduction}}",
+        "jail": "Straffe",
+        "jail_reduction": "Fængsels reduceringer ({{amount}} måneder)",
+        "jail_full": "Straffe ({{amount}} Måneder) {{reduction}}",
+        "reducted": "reduceret",
+        "incident": {
+            "title": "Rapport #{{id}}",
+            "subtitle": "Denne rapport blev skrevet den: {{date}}"
+        },
+        "tooltip": {
+            "description": "Du kan ændre beskrivelsen"
+        },
+        "modal": {
+            "delete": {
+                "title": "Slet",
+                "message": "Vil du gerne slette denne rapport?"
+            }
+        },
+        "notification": {
+            "error": {
+                "title": "Fejl",
+                "message": "Der opstod en fejl, under oprettelsen af rapporten!"
+            },
+            "update": {
+                "title": "Rapport opdateret",
+                "message": "Du har ænderet rapporten med id'et: #{{id}}"
+            },
+            "delete": {
+                "title": "Rapport slettet",
+                "message": "Du har slettet rapporten med id'et: #{{id}}"
+            },
+            "success": {
+                "title": "Rapport oprettet",
+                "message": "Rapport #{{id}} er oprettet"
+            }
+        }
+    },
+    "evidences": {
+        "title": "Beviser",
+        "subtitle": "Søg efter beviser",
+        "form": "Søg beviser",
+        "create": "Opret et bevis",
+        "button": "Opret bevis",
+        "name": "Navn",
+        "description": "Beskrivelse",
+        "players": "Borgere involveret",
+        "images": "Billedere",
+        "evidence": {
+            "title": "Bevis #{{id}}",
+            "subtitle": "Dette bevis blev oprettet den: {{date}}"
+        },
+        "modal": {
+            "delete": {
+                "title": "Slet",
+                "message": "Vil du gerne slette dette bevis?"
+            }
+        },
+        "notification": {
+            "error": {
+                "title": "Error",
+                "message": "Der opstod en fejl under oprettelsen af dit bevis, prøv venligst igen!"
+            },
+            "update": {
+                "title": "Bevis ændret",
+                "message": "Du har ændret beviset med id'et: {{id}}"
+            },
+            "delete": {
+                "title": "Bevis slettet",
+                "message": "Du ahr slettet beviset med id'et: #{{id}}"
+            },
+            "success": {
+                "title": "Bevis oprettet",
+                "message": "Bevis #{{id}} er oprettet"
+            }
+        }
+    },
+    "citizens": {
+        "title": "Borgere",
+        "subtitle": "Søg efter borgere",
+        "form": "Søg borgere",
+        "wanted": "EFTERLYST",
+        "incidents": "Rapport",
+        "evidences": "Beviser",
+        "warrants": "Efterlysninger",
+        "vehicles": "Biler",
+        "properties": "Ejendomme",
+        "bolos": "Bolos",
+        "licenses": "Licenser",
+        "licenses_list": {
+            "dmv": "Køre tilladelse",
+            "drive": "Kørekort",
+            "drive_bike": "Motorcykel kørekort",
+            "drive_truck": "Lastbil kørekort",
+            "weed_processing": "Narkotika tilladelse"
+        },
+        "citizen": {
+            "title": "Borger",
+            "subtitle": "Se alt information omkring denne borger"
+        },
+        "modal": {
+            "license_remove": {
+                "title": "Fjern licens",
+                "message": "Vil du gerne fratage dette licens?"
+            }
+        },
+        "notification": {
+            "update": {
+                "title": "Borger information opdateret",
+                "message": "Du har opdateret borger informationen"
+            },
+            "take": {
+                "title": "Licens indraget",
+                "message": "Du har inddraget et license fra denne borger"
+            }
+        }
+    },
+    "charges": {
+        "title": "Fængsel",
+        "subtitle": "Find eller opret en fængsels straf",
+        "form": "Søg efter fængsels straffe",
+        "create": "Opret en fængsels straf",
+        "button": "Opret fængsels straf",
+        "name": "Navn",
+        "time": "Tid ({{time}} måneder)",
+        "charge": {
+            "title": "Fængsels straff #{{id}}",
+            "subtitle": "Denne fængsels straf blev oprettet den: {{date}}"
+        },
+        "modal": {
+            "delete": {
+                "title": "Slet",
+                "message": "Vil du gerne slette denne fængsels straf??"
+            }
+        },
+        "notification": {
+            "error": {
+                "title": "Fejl",
+                "message": "Der opstod en fejl under oprettelsen af fængsels straf. Prøv igen!"
+            },
+            "update": {
+                "title": "Bøde opdateret",
+                "message": "Du har ændret fængsels straffen med id: {{id}}"
+            },
+            "delete": {
+                "title": "Bøde slettet",
+                "message": "Du har slettet fængsels straffen #{{id}}"
+            },
+            "success": {
+                "title": "Bøde oprettet",
+                "message": "fængsels straffen #{{id}} er oprettet"
+            }
+        }
+    },
+    "codes": {
+        "title": "10-koder",
+        "subtitle": "Søg eller opret en 10-kode",
+        "form": "Søg efter 10-kode",
+        "create": "Opret en 10-kode",
+        "button": "Opret 10-kode",
+        "name": "navn",
+        "format": "10-kode ({{format}})",
+        "code": {
+            "title": "10-kode ({{code}})",
+            "subtitle": "Denne 10-kode blev oprettet den: {{date}}"
+        },
+        "modal": {
+            "delete": {
+                "title": "Delete",
+                "message": "Vil du gerne slette denne 10-kode?"
+            }
+        },
+        "notification": {
+            "error": {
+                "title": "Fejl",
+                "message": "Der opstod en fejl under oprettelsen af 10-koden. Prøv igen!"
+            },
+            "update": {
+                "title": "10-kode opdateret",
+                "message": "Du har ænderet 10-koden med id'et: {{id}}"
+            },
+            "delete": {
+                "title": "10-kode slettet",
+                "message": "Du har slettet 10-koden med id'et #{{id}}"
+            },
+            "success": {
+                "title": "10-kode oprettet",
+                "message": "10-kode #{{id}} blev oprettet"
+            }
+        }
+    },
+    "fines": {
+        "title": "Bøder",
+        "subtitle": "Find eller opret en bøde",
+        "form": "Søg efter bøde",
+        "create": "Opret en bøde",
+        "button": "Opret bøde",
+        "name": "Navn",
+        "code": "Kode ({{format}})",
+        "amount": "Mængde",
+        "fine": {
+            "title": "Bøde #{{id}}",
+            "subtitle": "Denne bøde blev oprettet den: {{date}}"
+        },
+        "modal": {
+            "delete": {
+                "title": "Slet",
+                "message": "Vil du virkelig gerne slette denne bøde?"
+            }
+        },
+        "notification": {
+            "error": {
+                "title": "Fejl",
+                "message": "Noget gik galt med at oprette bøden. Prøv igen!"
+            },
+            "update": {
+                "title": "Bøde opdateret",
+                "message": "Du har med succes ændret bøden med id {{id}}"
+            },
+            "delete": {
+                "title": "Bøde slettet",
+                "message": "Du har slettet bøden #{{id}}"
+            },
+            "success": {
+                "title": "Bøde oprettet",
+                "message": "Bøde #{{id}} er oprettet"
+            }
+        }
+    },
+    "houses": {
+        "title": "Huse",
+        "subtitle": "Søg efter huse, efter id eller adresse",
+        "form": "Søg i ejendomme",
+        "owned": "Ejet",
+        "house": {
+            "title": "Huse #{{id}}",
+            "subtitle": "Denne ejendom er beliggende på {{address}}",
+            "placeholder": "Se alle oplysninger om denne ejendom"
+        },
+        "notification": {
+            "location": {
+                "title": "GPS sat",
+                "message": "Et GPS er blevet indstillet til denne ejendom"
+            }
+        }
+    },
+    "vehicles": {
+        "title": "Biler",
+        "subtitle": "Søg efter køretøjer efter registreringsnummer",
+        "form": "Søg efter køretøjer",
+        "owned": "Ejet",
+        "plate": "Nummerplade",
+        "incidents": "Rapporter",
+        "bolos": "Bolos",
+        "wanted": "ØNSKEDE",
+        "vehicle": {
+            "title": "Bil",
+            "subtitle": "Se alle oplysninger om dette køretøj"
+        },
+        "notification": {
+            "update": {
+                "title": "Køretøjsoplysninger opdateret",
+                "message": "Du har ændret køretøjsoplysningerne"
+            }
+        }
+    },
+    "warrants": {
+        "title": "Efterlysninger",
+        "subtitle": "Søg efter efterlysninger efter borger eller adresse",
+        "form": "Søg i efterlysning",
+        "create": "Opret en efterlysning",
+        "button": "Opret efterlysning",
+        "reason": "Grund",
+        "description": "Beskrivelse",
+        "type": "Efterlysnings type",
+        "players": "Borgere involveret",
+        "house": "huse",
+        "done": "Afslut",
+        "screenshot": "Tag et Screenshot",
+        "tabs": {
+            "link": "Link",
+            "screenshot": "Screenshot"
+        },
+        "types": {
+            "arrest": "Anholdelse",
+            "search": "Visitering"
+        },
+        "warrant": {
+            "title": "Efterlysning #{{id}}",
+            "subtitle": "Denne efterlysning blev oprettet den: {{date}}"
+        },
+        "modal": {
+            "delete": {
+                "title": "Slet",
+                "message": "Vil du virkelig gerne slette denne efterlysning?"
+            }
+        },
+        "notification": {
+            "error": {
+                "title": "Fejl",
+                "message": "Noget gik galt under oprettelsen af efterlysningen. Prøv igen!"
+            },
+            "update": {
+                "title": "Efterlysning opdateret",
+                "message": "Du har med succes ændret efterlysningen med id {{id}}"
+            },
+            "delete": {
+                "title": "Efterlysning slettet",
+                "message": "Du har slettet efterlysning #{{id}}"
+            },
+            "success": {
+                "title": "Efterlysning oprettet",
+                "message": "Efterlysningen #{{id}} er blevet oprettet"
+            }
+        }
+    },
+    "officers": {
+        "title": "Betjente",
+        "subtitle": "Se alle betjente"
+    },
+    "bolos": {
+        "title": "Bolos",
+        "subtitle": "Søg efter bolos ved navn, nummerplade eller titel",
+        "form": "Søg bolos",
+        "create": "Opret en bolo",
+        "button": "Opret bolo",
+        "name": "Titel",
+        "description": "Beskrivelse",
+        "type": "Bolo-type",
+        "players": "Borgere",
+        "vehicles": "Køretøjer",
+        "ended": "Afsluttet",
+        "types": {
+            "people": "Mennesker (Navn)",
+            "vehicles": "Køretøjer (Nummerplade)"
+        },
+        "bolo": {
+            "title": "BOLO #{{id}}",
+            "subtitle": "Denne bolo blev oprettet {{date}}"
+        },
+        "tooltip": {
+            "description": "Du kan redigere BOLO'en",
+            "end": "Du kan afslutte denne BOLO"
+        },
+        "modal": {
+            "delete": {
+                "title": "Slet",
+                "message": "Vil du slette denne bolo?"
+            },
+            "end": {
+                "title": "Afslut BOLO",
+                "message": "Vil du afslutte denne bolo?"
+            }
+        },
+        "notification": {
+            "error": {
+                "title": "Fejl",
+                "message": "Noget gik galt under oprettelsen af boloen, prøv igen!"
+            },
+            "update": {
+                "title": "BOLO opdateret",
+                "message": "Du har opdateret boloen #{{id}} med succes"
+            },
+            "delete": {
+                "title": "BOLO slettet",
+                "message": "Du har slettet boloen #{{id}} med succes"
+            },
+            "success": {
+                "title": "BOLO oprettet",
+                "message": "Bolo #{{id}} er blevet oprettet"
+            },
+            "end": {
+                "title": "BOLO afsluttet",
+                "message": "Du har afsluttet boloen #{{id}} med succes"
+            }
+        }
+    },
+    "announcements": {
+        "title": "Meddelelser",
+        "subtitle": "Se alle meddelelser lavet af cheferne",
+        "list": "Liste",
+        "form": "Formular",
+        "search": "Søg efter meddelelser",
+        "pinned": "Denne meddelelse er fastgjort",
+        "created": "Meddelelse oprettet",
+        "create": "Opret meddelelse",
+        "name": "Titel",
+        "button": "Opret meddelelse",
+        "modal": {
+            "delete": {
+                "title": "Slet",
+                "message": "Vil du slette denne meddelelse?"
+            }
+        },
+        "announcement": {
+            "title": "Meddelelse #{{id}}",
+            "subtitle": "Denne meddelelse blev oprettet {{date}}",
+            "edit": "Rediger",
+            "save": "Gem ændringer"
+        },
+        "notification": {
+            "error": {
+                "title": "Fejl",
+                "message": "Noget gik galt ved oprettelse af meddelelsen, prøv igen!"
+            },
+            "update": {
+                "title": "Meddelelse opdateret",
+                "message": "Du har succesfuldt ændret meddelelsen med id {{id}}"
+            },
+            "delete": {
+                "title": "Meddelelse slettet",
+                "message": "Du har succesfuldt slettet meddelelsen #{{id}}"
+            },
+            "success": {
+                "title": "Meddelelse oprettet",
+                "message": "Meddelelse #{{id}} er blevet oprettet"
+            }
+        }
+    },
+    "configuration": {
+        "title": "konfigurer",
+        "subtitle": "Tilpas MDT til din smag",
+        "colors": "Farver",
+        "main_color": "Hoved farve",
+        "secondary_color": "Sekundær farve",
+        "third_color": "Tredje farve",
+        "highlight_color": "Highlight farve",
+        "contrast_color": "Kontrast farve",
+        "text_color": "Tekst farve",
+        "language": "Sprog",
+        "reset": "Gendan indstillinger",
+        "placeholder": "🌎 Sprog",
+        "tooltip": {
+            "language": "Denne mulighed ændrer ikke sproget for alle brugere!"
+        }
+    },
+    "chat": {
+        "placeholder": "Skriv en besked.."
+    },
+    "errors": {
+        "no-permission": "Du har ikke tilladelse til at gøre dette!",
+        "incidents": {
+            "name": {
+                "length": "Navnet skal være længere end 3 tegn",
+                "required": "Du skal angive et navn"
+            },
+            "description": {
+                "length": "Beskrivelsen skal være længere end 10 tegn",
+                "required": "Du skal give en beskrivelse"
+            },
+            "players": {
+                "length": "Du skal vælge mindst 1 borger",
+                "required": "Du skal vælge en involveret borger"
+            },
+            "cops": {
+                "length": "Du skal vælge mindst 1 betjent",
+                "required": "Du skal vælge en involveret betjent"
+            }
+        },
+        "evidences": {
+            "name": {
+                "length": "Navnet skal være længere end 3 tegn",
+                "required": "Du skal angive et navn"
+            },
+            "description": {
+                "length": "Beskrivelsen skal være længere end 10 tegn",
+                "required": "Du skal give en beskrivelse"
+            },
+            "images": {
+                "length": "Du skal tilføje mindst 1 billede",
+                "max": "Du kan kun tilføje 9 billeder"
+            }
+        },
+        "bolos": {
+            "title": {
+                "length": "Titlen skal være længere end 3 tegn",
+                "required": "Du skal angive en titel"
+            },
+            "description": {
+                "length": "Beskrivelsen skal være længere end 10 tegn",
+                "required": "Du skal angive en beskrivelse"
+            },
+            "bolo_type": {
+                "required": "Du skal vælge en bolo-type"
+            }
+        },
+        "warrants": {
+            "reason": {
+                "length": "Årsagen skal være længere end 5 tegn",
+                "required": "Du skal give en begrundelse"
+            },
+            "description": {
+                "length": "Beskrivelsen skal være længere end 10 tegn",
+                "required": "Du skal give en beskrivelse"
+            },
+            "wtype": {
+                "required": "Du skal vælge en efterlysnings-type"
+            }
+        },
+        "alert": {
+            "title": {
+                "required": "Advarslen skal have en titel"
+            },
+            "description": {
+                "required": "Du skal skrive noget i beskrivelsen af ​​advarslen"
+            }
+        },
+        "charges": {
+            "name": {
+                "required": "Du skal angive et navn"
+            }
+        },
+        "codes": {
+            "name": {
+                "required": "Du skal angive et navn"
+            },
+            "code": {
+                "required": "Du skal angive en kode",
+                "format": "Kodeformatet er forkert"
+            }
+        },
+        "fines": {
+            "name": {
+                "required": "Du skal angive et navn"
+            },
+            "code": {
+                "required": "skal angive en kode",
+                "format": "Kodeformatet er forkert"
+            },
+            "amount": {
+                "required": "Du skal angive et beløb"
+            }
+        }
+    },
+    "list": {
+        "not_found": "Ingen resultater fundet"
+    },
+    "modal": {
+        "confirm": "Bekræft",
+        "close": "Luk"
+    },
+    "common": {
+        "tooltip": {
+            "save": "Klik på gem-ikonet for at gemme værdierne",
+            "visit": "Klik her for at besøge ejerens profil",
+            "waypoint": "Klik her for at indstille en GPS til denne ejendom",
+            "image": "Venstre klik for at redigere billedet | Højreklik for at zoome billedet",
+            "clear": "Klik her for at fjerne alle valgte elementer"
+        },
+        "modal": {
+            "clear_title": "Ryd formularen",
+            "clear_message": "Er du sikker på, at du vil rydde værdierne i formularen?"
+        }
+    },
+    "words": {
+        "error": "Fejl",
+        "search": "Søg",
+        "name": "Navn",
+        "description": "Beskrivelse",
+        "amount": "Beløb",
+        "months": "måneder",
+        "street": "Gade",
+        "warrants": "Efterlysninger",
+        "information": "Information",
+        "firstname": "Fornavn",
+        "lastname": "Efternavn",
+        "gender": "Køn",
+        "birth": "Fødselsdato",
+        "phone": "Telefonnummer",
+        "job": "Job",
+        "height": "Højde",
+        "notes": "Noter",
+        "yes": "Ja",
+        "no": "Nej",
+        "house": "Huse",
+        "online": "Online",
+        "offline": "Offline",
+        "exit": "Ud"
+    },
+    "pages": {
+        "dashboard": "Dashboard",
+        "incidents": "Rapporter",
+        "evidences": "Beviser",
+        "warrants": "Efterlysninger",
+        "officers": "betjente",
+        "alerts": "Alarmer",
+        "citizens": "Borgere",
+        "vehicles": "Biler",
+        "houses": "Huse",
+        "fines": "Bøder",
+        "codes": "Koder",
+        "charges": "Fængsels-straffe",
+        "announcements": "Meddelelser",
+        "bolos": "Bolos",
+        "config": "Konfigurer"
+    }
+}

@@ -1,0 +1,11 @@
+@import '../../../globals.scss';
+
+form {
+    .content {
+        .input-form {
+            &:not(:first-child) {
+                margin-top: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,68 @@
+@import '../../globals.scss';
+
+.map-wrapper {
+    margin-block: .5rem;
+    margin-inline: 1rem;
+    .map-settings {
+        width: 100%;
+        margin-bottom: 1rem;
+        .map-settings-header {
+            h1 {
+                color: rgba(var(--text), .7);
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 500;
+                font-size: 1.1rem;
+            }
+        }
+        .map-settings-content {
+            display: flex;
+            margin-top: .5rem;
+            .map-setting {
+                display: flex;
+                align-items: center;
+                p {
+                    color: rgba(var(--text), .5);
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: 500;
+                    font-size: 1rem;
+                }
+                .switch {
+                    scale: .8;
+                }
+            }
+        }
+    }
+    .game-map { 
+        height: 90%;
+        width: 95%;
+        border: 2px solid rgba(var(--third), 1);
+        .leaflet-popup {
+            .leaflet-popup-content-wrapper, .leaflet-popup-tip {
+                text-align: center;
+                font-size: .5vh;
+                font-family: 'Montserrat', sans-serif;
+                background-color: rgba(var(--main), 1);
+                color: rgba(var(--text), 1);
+                p {
+                    font-size: .8vh;
+                    max-width: 300px;
+                    word-break: break-all;
+                    white-space: pre-wrap;
+                }
+                button {
+                    scale: .95;
+                }
+            }
+            .leaflet-popup-close-button {
+                transition: color .2s ease-in-out;
+                color: rgba(var(--text), 1);
+                &:hover {
+                    color: rgba(var(--text), .7);
+                }
+            }
+        }
+        .leaflet-control-container {
+            display: none;
+        }
+    }
+}

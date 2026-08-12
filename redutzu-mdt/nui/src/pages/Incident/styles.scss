@@ -1,0 +1,62 @@
+@import '../../globals.scss';
+
+.incident {
+    box-sizing: border-box;
+    margin-block: 3vh;
+    display: grid;
+    grid-template-columns: .5fr 1fr;
+    gap: 1rem;
+    .info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-family: 'Montserrat', sans-serif;
+        i {
+            font-size: 10vh;
+            margin-bottom: 1rem;
+            color: rgba(var(--text), 1);
+        }
+        h1 {
+            text-align: center;
+            font-size: 2.5vh;
+            font-weight: 800;
+            color: rgba(var(--text), 1);
+            max-width: 20vw;
+            word-break: break-all;
+        }
+    }
+    .description {
+        .title {
+            display: flex;
+            align-items: center;
+            h1 {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 1.5vh;
+                font-weight: 700;
+                margin-bottom: .5rem;
+                color: rgba(var(--text), 1);
+            }
+            i {
+                cursor: pointer;
+                font-size: 1.1vh;
+                color: rgba(var(--text), 1);
+                margin-left: .5rem;
+                margin-bottom: .5rem;
+            }
+        }
+        textarea {
+            max-width: 90%;
+            padding: 0;
+            background-color: rgba(var(--main), 1);
+            border: none;
+        }
+    }
+    .body {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(15vw, 1fr));
+        margin: 2rem;
+        grid-column: 2 span;
+        gap: 1rem;
+    }
+}
